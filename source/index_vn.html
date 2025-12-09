@@ -1,0 +1,3445 @@
+<!DOCTYPE html>
+<html lang="vi">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Từ hoàn tiền đến nhận vé CGV, cùng HSBC tối đa lợi ích từ khoản lương hàng tháng của bạn.</title>
+
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0 auto;
+				font-family: Arial, sans-serif;
+				font-size: 16px;
+				line-height: 24px;
+				width: 700px;
+				background: #f3f3f3;
+				color: #333333;
+			}
+
+			p {
+				font-size: 16px;
+				margin: 16px 0;
+			}
+
+			/* Common */
+			.button {
+				background: #db0011;
+				padding: 16px 60px;
+				display: inline-block;
+				color: white;
+				cursor: pointer;
+				font-weight: bold;
+				font-size: 16px;
+			}
+
+			.button-black {
+				background: #000000;
+				padding: 16px 60px;
+				display: inline-block;
+				color: white;
+				cursor: pointer;
+				font-weight: bold;
+				font-size: 16px;
+			}
+
+			/* Use to change dark mode */
+			.font-color {
+				color: #000000;
+			}
+
+			.background-color {
+				background: #ffffff;
+			}
+
+			.border-color {
+				border-color: #333333;
+			}
+
+			.line {
+				background: #ffffff;
+			}
+
+			/* End */
+
+			/* End common CSS */
+			.header-intro {
+				padding-top: 0px;
+				font-size: 32px;
+				color: #000000;
+				line-height: 40px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			/* Part 1 */
+
+			/* Part 2 */
+			.header-part-2 {
+				padding: 0 150px 0 0;
+			}
+
+			.card-content-part-2 {
+				margin: 0;
+				padding: 0 0 0 24px;
+				border: none;
+			}
+
+			/* Part 3 */
+			.header-part-3 {
+				padding: 0 170px 0 0 !important;
+				font-size: 24px;
+			}
+
+			/* Part 4 */
+			.header-part-4 {
+				padding: 32px 60px 12px 60px;
+			}
+
+			/* Part 8 */
+			.cell-common-style {
+				padding: 16px;
+				border: 1px solid #333333;
+				box-sizing: border-box;
+				background-color: #ffffff;
+				color: #000000;
+			}
+
+			.cell-middle-style {
+				border-left: none;
+				border-right: none;
+			}
+
+			/* Others CSS */
+			.title_box {
+				font-size: 23px;
+				line-height: 30px;
+			}
+
+			.title_item {
+				font-size: 19px;
+				line-height: 27px;
+			}
+
+			/* Body content */
+			.body_content {
+				border: 1px solid #d7d8d6;
+				background: #ffffff;
+				width: 700px;
+			}
+
+			/* Hero */
+			.hero_logo {
+				padding: 32px 45px;
+			}
+
+			/* Tạo padding */
+			.main_body {
+				padding: 32px 45px;
+			}
+
+			/* Footer */
+			footer {
+				background-color: #e4e8eb;
+			}
+
+			.footer-container {
+				font-size: 16px;
+				line-height: 1.3;
+				color: #000000;
+				background-color: #ededed;
+			}
+
+			.footer-container-main {
+				padding: 16px 0 !important;
+			}
+
+			.content_text_footer {
+				margin: 0;
+				padding: 10px 0 0 0;
+				border: none;
+				font-family: Arial, Helvetica, sans-serif !important;
+				font-size: 12px;
+				line-height: 16px;
+				color: #808080;
+			}
+
+			.footer_container {
+				padding: 32px 45px;
+			}
+
+			/* Dark mode */
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: #101010 !important;
+				}
+
+				/* CSS common */
+				.text-common {
+					color: #ffffff;
+				}
+
+				/* Use to change dark mode */
+				.font-color {
+					color: #ffffff !important;
+				}
+
+				.background-color {
+					background: #212121 !important;
+				}
+
+				.border-color {
+					border-color: #ededed !important;
+				}
+
+				.line {
+					background: #212121 !important;
+				}
+
+				.cell-common-style {
+					border: 1px solid #ededed;
+					background-color: #212121;
+					color: #ffffff;
+				}
+
+				.button-white {
+					color: #ffffff !important;
+					background-color: #212121 !important;
+					border-color: #ededed !important;
+				}
+
+				/* End */
+
+				/* CSS intro */
+				.header-intro {
+					color: #ffffff;
+				}
+
+				.body_content {
+					color: #ffffff !important;
+					background: #212121 !important;
+					border: 1px solid #767676 !important;
+				}
+
+				.footer-container {
+					background-color: #1d1d1d !important;
+					color: #ffffff !important;
+				}
+
+				.footer_container {
+					background: #333333 !important;
+					color: #ffffff !important;
+				}
+
+				.footer-social {
+					color: #ffffff !important;
+				}
+			}
+
+			/* Mobile */
+			@media (max-width: 768px) {
+				body {
+					width: 100%;
+					padding: 16px;
+				}
+
+				.body_content {
+					border: 1px solid #d7d8d6;
+					width: 100% !important;
+				}
+
+				/* Hero */
+				.hero_logo {
+					padding: 32px 22px;
+				}
+
+				/* Tạo padding */
+				.main_body {
+					padding: 16px 22px 32px 22px;
+				}
+
+				/* Common */
+				.title-common {
+					padding-right: 0 !important;
+					padding-left: 0 !important;
+				}
+
+				.button,
+				.button-black {
+					width: 100% !important;
+					display: table;
+				}
+
+				.td-mobile {
+					display: block !important;
+					width: 100% !important;
+					max-width: 100% !important;
+				}
+
+				.td-mobile.none-box img {
+					display: none !important;
+				}
+
+				.button-primary-container {
+					width: 100% !important;
+					max-width: 100% !important;
+				}
+
+				/* Part 1 */
+				.img-part-1 {
+					width: 100% !important;
+				}
+
+				.fake-gap {
+					padding: 32px 0 0 0 !important;
+				}
+
+				/* Part 2 */
+				.header-part-2 {
+					padding: 0 !important;
+				}
+
+				.box_percent_part-2 {
+					padding: 16px 0 !important;
+				}
+
+				.box-description-part-2 {
+					padding: 16px 0 !important;
+				}
+
+				/* Part 3 */
+				.header-part-3 {
+					padding: 0 0 0 0 !important;
+				}
+
+				.box-description-part-3 {
+					padding: 16px 0 !important;
+				}
+
+				/* Part 4 */
+				.header-part-4 {
+					padding: 32px 0 12px 0 !important;
+				}
+
+				.img-header {
+					padding-top: 16px !important;
+				}
+
+				.card-part-4 {
+					padding: 0 16px 16px 16px !important;
+				}
+
+				/* Part 5 */
+				.card-part-5,
+				.header-part-5 {
+					padding: 0 !important;
+				}
+
+				.arrow-icon-part-5 {
+					transform: rotate(90deg);
+				}
+
+				/* Part 6 */
+				.header-part-6 {
+					padding: 0 !important;
+				}
+
+				.arrow-icon-part-6 {
+					transform: rotate(90deg) translateX(-100%);
+				}
+
+				.hidden-border-card-p-6 {
+					border: unset !important;
+				}
+
+				/* Part 8 */
+				.cell-middle-style {
+					border: 1px solid !important;
+					border-bottom: none !important;
+					border-top: none !important;
+				}
+
+				.top-border {
+					border-top: 1px solid !important;
+				}
+
+				/* Content */
+				.item {
+					display: block;
+				}
+
+				.hide-on-mobile {
+					display: none;
+				}
+
+				/* footer */
+				.footer-container-main {
+					padding: 0 32px !important;
+				}
+
+				.stack-column-top {
+					display: block !important;
+					width: 100% !important;
+					max-width: 100% !important;
+					text-align: center;
+					padding: 16px 0 !important;
+					font-size: 14px !important;
+				}
+
+				.stack-column-bottom {
+					display: block !important;
+					width: 100% !important;
+					max-width: 100% !important;
+					text-align: center;
+					border-top: 2px solid #db0011;
+					padding: 16px 0 !important;
+					font-size: 14px !important;
+				}
+
+				.footer_container {
+					padding: 16px 22px !important;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- Pre-header -->
+		<div
+			style="
+				display: none;
+				font-size: 1px;
+				color: #ffffff;
+				line-height: 1px;
+				max-height: 0px;
+				max-width: 0px;
+				opacity: 0;
+				overflow: hidden;
+			"
+		>
+			Chúng tôi có ưu đãi đặc biệt dành cho bạn hôm nay...
+		</div>
+		<!-- Body content -->
+		<table
+			class="body_content"
+			border="0"
+			cellpadding="0"
+			cellspacing="0"
+			align="center"
+		>
+			<tr>
+				<td>
+					<!-- Hero -->
+					<div class="hero">
+						<table
+							width="100%"
+							cellpadding="0"
+							cellspacing="0"
+							border="0"
+							class="hero_logo"
+						>
+							<tr>
+								<td align="left" valign="bottom">
+									<img
+										src="image/chs_hsbc_logo.jpg"
+										width="104"
+										height="28"
+										alt=""
+										style="display: block"
+									/>
+								</td>
+<!--
+								<td align="right" valign="bottom">
+									<img
+										src="image/chs_hsbc_cards.jpg"
+										height="50"
+										alt=""
+										style="display: block"
+									/>
+								</td>
+-->
+							</tr>
+						</table>
+						<img
+							src="image/chs_key.jpg"
+							height="auto"
+							alt=""
+							width="100%"
+						/>
+					</div>
+					<!-- Bọc padding -->
+					<table width="100%" cellpadding="0" cellspacing="0" border="0">
+						<!-- Intro  -->
+						<tr>
+							<td class="main_body">
+								<!-- Intro -->
+								<div class="intro">
+									<table
+										width="100%"
+										border="0"
+										cellpadding="0"
+										cellspacing="0"
+									>
+										<tr>
+											<td
+												valign="top"
+												align="left"
+												class="header-intro"
+											>Chuyển lương về HSBC,<br />biến thu nhập thành đặc quyền!</td>
+										</tr>
+										<tr>
+											<td
+												align="left"
+												valign="top"
+												class="text-common"
+												style="padding: 16px 0 0 0"
+											>Tận hưởng ưu đãi từ hoàn tiền không giới hạn, vé xem phim CGV đến dịch vụ Fast Track tại sân bay chỉ với một thao tác chuyển lương về HSBC.  Chuyển lương ngay hôm nay để nhận đặc quyền xứng tầm!</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<!-- Part 1 -->
+						<tr>
+							<td bgcolor="#e7e7e7" class="main_body">
+								<table
+									width="100%"
+									border="0"
+									cellpadding="0"
+									cellspacing="0"
+								>
+									<!-- Image -->
+									<tr>
+										<td
+											style="
+												margin: 0;
+												padding: 0 0 32px 0;
+												border: none;
+												font-family: Arial, Helvetica, sans-serif !important;
+												font-size: 16px;
+												line-height: 1.3;
+												color: #000000;
+											"
+										>
+											<img
+												src="image/chs_box_25.jpg"
+												width="100%"
+												height="auto"
+												alt=""
+												style="display: block"
+											/>
+										</td>
+									</tr>
+									<!-- Header -->
+									<tr>
+										<td
+											align="left"
+											style="
+												margin: 0;
+												padding: 0;
+												border: none;
+												font-family: Arial, Helvetica, sans-serif !important;
+												font-size: 24px;
+												line-height: 1.3;
+												color: #db0011;
+											"
+											class="title-common"
+										><strong>Duy trì số dư càng cao, nhận lãi càng nhiều!</strong></td>
+									</tr>
+									<!-- Content -->
+									<tr>
+										<td
+											style="
+												margin: 0;
+												padding: 15px 0 0 0;
+												border: none;
+												font-family: Arial, Helvetica, sans-serif !important;
+												font-size: 16px;
+												line-height: 1.3;
+												color: #000000;
+											"
+										>Nhận lãi suất Tài khoản vãng lai đến 0.25%/năm</td>
+									</tr>
+									<!-- Main content -->
+									<tr>
+										<td
+											style="
+												margin: 0;
+												padding: 12px 0 0 0;
+												border: none;
+												font-family: Arial, Helvetica, sans-serif !important;
+												font-size: 14px;
+												line-height: 1.3;
+												color: #000000;
+											"
+										>
+											<table
+												width="100%"
+												border="0"
+												cellpadding="0"
+												cellspacing="0"
+											>
+												<!-- first row -->
+												<tr>
+													<!-- Column left -->
+													<td
+														style="
+															margin: 0;
+															padding: 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<tr>
+																<td>
+																	<!-- Button -->
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																		style="
+																			padding: 10px
+																				0 10px 0;
+																		"
+																	>
+																		<tr>
+																			<td
+																				align="center"
+																			>
+																				<table
+																					role="presentation"
+																					border="0"
+																					cellpadding="0"
+																					cellspacing="0"
+																					style="
+																						text-align: center;
+																						display: table !important;
+																					"
+																					width="100%"
+																					class="button-black"
+																				>
+																					<tr>
+																						<td>
+																							Số dư tài khoản (VND)
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<!-- Spacing -->
+													<td
+														style="
+															margin: 0;
+															padding: 0 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>&nbsp;</td>
+													<!-- Spacing -->
+													<!-- Column right -->
+													<td
+														style="
+															margin: 0;
+															padding: 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<tr>
+																<td>
+																	<!-- Button -->
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																		style="
+																			padding: 10px
+																				0 10px 0;
+																		"
+																	>
+																		<tr>
+																			<td
+																				align="center"
+																			>
+																				<table
+																					role="presentation"
+																					border="0"
+																					cellpadding="0"
+																					cellspacing="0"
+																					style="
+																						text-align: center;
+																						display: table !important;
+																					"
+																					width="100%"
+																					class="button-black"
+																				>
+																					<tr>
+																						<td>
+																							Lãi suất (năm)
+																						</td>
+																					</tr>
+																				</table>
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<!-- Column left -->
+													<td
+														style="
+															margin: 0;
+															padding: 0 0 5px 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<tr>
+																<td
+																	width="305"
+																	bgcolor="#FFFFFF"
+																	style="
+																		margin: 0;
+																		padding: 10px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="border-color background-color"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				align="center"
+																				style="
+																					margin: 0;
+																					padding: 0
+																						0
+																						0
+																						10px;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="font-color"
+																			>
+																			  50 - 100 triệu
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<!-- Spacing -->
+													<td
+														style="
+															margin: 0;
+															padding: 0 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>&nbsp;</td>
+													<!-- Spacing -->
+													<!-- Column right -->
+													<td
+														style="
+															margin: 0;
+															padding: 0 0 5px 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<tr>
+																<td
+																	width="305"
+																	bgcolor="#FFFFFF"
+																	style="
+																		margin: 0;
+																		padding: 10px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="border-color background-color"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				align="center"
+																				style="
+																					margin: 0;
+																					padding: 0
+																						0
+																						0
+																						10px;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="font-color"
+																			>
+																			  0.05%
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<!-- Column left -->
+													<td
+														style="
+															margin: 0;
+															padding: 0 0 5px 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<tr>
+																<td
+																	width="305"
+																	bgcolor="#FFFFFF"
+																	style="
+																		margin: 0;
+																		padding: 10px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="border-color background-color"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				align="center"
+																				style="
+																					margin: 0;
+																					padding: 0
+																						0
+																						0
+																						10px;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="font-color"
+																			>
+																			  100 - 250 triệu</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<!-- Spacing -->
+													<td
+														style="
+															margin: 0;
+															padding: 0 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>&nbsp;</td>
+													<!-- Spacing -->
+													<!-- Column right -->
+													<td
+														style="
+															margin: 0;
+															padding: 0 0 5px 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<tr>
+																<td
+																	width="305"
+																	bgcolor="#FFFFFF"
+																	style="
+																		margin: 0;
+																		padding: 10px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="border-color background-color"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				align="center"
+																				style="
+																					margin: 0;
+																					padding: 0
+																						0
+																						0
+																						10px;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="font-color"
+																			>
+																			  0.10%
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<!-- Column left -->
+													<td
+														style="
+															margin: 0;
+															padding: 0 0 5px 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<tr>
+																<td
+																	width="305"
+																	bgcolor="#FFFFFF"
+																	style="
+																		margin: 0;
+																		padding: 10px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="border-color background-color"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				align="center"
+																				style="
+																					margin: 0;
+																					padding: 0
+																						0
+																						0
+																						10px;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="font-color"
+																			>
+																			  250 - 500 triệu</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<!-- Spacing -->
+													<td
+														style="
+															margin: 0;
+															padding: 0 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>&nbsp;</td>
+													<!-- Spacing -->
+													<!-- Column right -->
+													<td
+														style="
+															margin: 0;
+															padding: 0 0 5px 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<tr>
+																<td
+																	width="305"
+																	bgcolor="#FFFFFF"
+																	style="
+																		margin: 0;
+																		padding: 10px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="border-color background-color"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				align="center"
+																				style="
+																					margin: 0;
+																					padding: 0
+																						0
+																						0
+																						10px;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="font-color"
+																			>
+																			  0.20%
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<!-- Column left -->
+													<td
+														style="
+															margin: 0;
+															padding: 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<tr>
+																<td
+																	width="305"
+																	bgcolor="#FFFFFF"
+																	style="
+																		margin: 0;
+																		padding: 10px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="border-color background-color"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				align="center"
+																				style="
+																					margin: 0;
+																					padding: 0
+																						0
+																						0
+																						10px;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="font-color"
+																			>
+																			  Từ 500 triệu trở lên
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+													<!-- Spacing -->
+													<td
+														style="
+															margin: 0;
+															padding: 0 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>&nbsp;</td>
+													<!-- Spacing -->
+													<!-- Column right -->
+													<td
+														style="
+															margin: 0;
+															padding: 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+															box-sizing: border-box;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<tr>
+																<td
+																	width="305"
+																	bgcolor="#FFFFFF"
+																	style="
+																		margin: 0;
+																		padding: 10px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="border-color background-color"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				align="center"
+																				style="
+																					margin: 0;
+																					padding: 0
+																						0
+																						0
+																						10px;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="font-color"
+																			>
+																			  0.25%
+																			</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td bgcolor="#db0011" class="main_body">
+								<table
+									width="100%"
+									border="0"
+									cellpadding="0"
+									cellspacing="0"
+								>
+									<tr>
+										<td
+											align="left"
+											style="
+												margin: 0;
+												padding: 0 150px 0 0;
+												border: none;
+												font-family: Arial, Helvetica, sans-serif !important;
+												font-size: 24px;
+												line-height: 1.3;
+												color: #FFFFFF;
+											"
+											class="title-common"
+										><strong>Nhận ngay các ưu đãi sau khi bạn đạt đủ điều kiện tương ứng:</strong></td>
+									</tr>
+									<tr>
+										<td
+											style="
+												margin: 0;
+												padding: 16px 0 32px 0;
+												border: none;
+												font-family: Arial, Helvetica, sans-serif !important;
+												font-size: 16px;
+												line-height: 1.3;
+												color: #000000;
+											"
+										>
+											<img
+												src="image/chs_box_26.jpg"
+												width="100%"
+												height="auto"
+												alt=""
+												style="display: block"
+											/>
+										</td>
+									</tr>
+									<!-- Spacing -->
+									<tr>
+										<td
+											style="
+												margin: 0;
+												padding: 32px 0 0 0;
+												border: none;
+												font-family: Arial, Helvetica, sans-serif !important;
+												font-size: 16px;
+												line-height: 1.3;
+												color: #000000;
+											"
+										></td>
+									</tr>
+									<!-- Main content -->
+									<tr>
+										<td
+											style="
+												margin: 0;
+												padding: 0 0 15px 0;
+												border: none;
+												font-family: Arial, Helvetica, sans-serif !important;
+												font-size: 16px;
+												line-height: 1.3;
+												color: #000000;
+											"
+										>
+											<table
+												width="100%"
+												border="0"
+												cellpadding="0"
+												cellspacing="0"
+											>
+												<!-- 1 -->
+												<tr>
+													<td
+														width="90"
+														align="center"
+														valign="middle"
+														style="
+															margin: 0;
+															padding: 16px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1.3;
+															color: #db0011;
+														"
+														class="td-mobile box_percent_part-2"
+													>&nbsp;
+														
+													</td>
+													<!-- Spacing -->
+													<td
+														width="12"
+														style="
+															margin: 0;
+															padding: 6px;
+															border: none;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													></td>
+													<!-- End spacing -->
+													<td
+														valign="middle"
+														bgcolor="#d5d5d5"
+														style="
+															margin: 0;
+															padding: 16px;
+															border: 1px solid #979797;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<!-- Header -->
+															<tr>
+																<td
+																	width="60%"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #db0011;
+																	"
+																	class="font-color"
+																>
+																	<strong>Ưu Đãi<sup style="font-size: 12px;">(*)</sup></strong>
+																</td>
+															  <td
+																	width="20"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																>&nbsp;</td>
+																<td
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #db0011;
+																	"
+																	class="font-color"
+																>
+																	<strong>Điều kiện (VND)</strong>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- Spacing -->
+												<tr>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+												</tr>
+												<!-- End spacing -->
+												<!-- 2 -->
+												<tr>
+													<td
+														width="90"
+														align="center"
+														valign="middle"
+														bgcolor="#d2d2d2"
+														style="
+															margin: 0;
+															padding: 16px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1.3;
+															color: #db0011;
+														"
+														class="td-mobile box_percent_part-2"
+													>
+														<img
+															src="image/chs_box_27.jpg"
+															width="100%"
+															height="auto"
+															alt=""
+															style="display: block"
+														/>
+													</td>
+													<!-- Spacing -->
+													<td
+														width="12"
+														style="
+															margin: 0;
+															padding: 6px;
+															border: none;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													></td>
+													<!-- End spacing -->
+													<td
+														valign="middle"
+														bgcolor="#FFFFFF"
+														style="
+															margin: 0;
+															padding: 16px;
+															border: 1px solid #979797;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<!-- Header -->
+															<tr>
+																<td
+																	width="60%"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 14px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																>
+																	<strong>Hoàn tiền thêm</strong> <strong style="color: #db0011;">2%</strong> trên Thẻ tín dụng<br>Ưu đãi giảm lãi suất vay cá nhân đến <strong style="color: #db0011;">1.5%</strong>
+																</td>
+															  <td
+																	width="20"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																><img
+																	src="image/chs_box_21.png"
+																	width="10"
+																	height="auto"
+																	alt=""
+																	style="display: block"
+																/></td>
+																<td
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 14px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																>
+																	Lương từ 10 triệu VND
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- Spacing -->
+												<tr>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+												</tr>
+												<!-- End spacing -->
+												<!-- 3 -->
+												<tr>
+													<td
+														width="90"
+														align="center"
+														valign="middle"
+														bgcolor="#d2d2d2"
+														style="
+															margin: 0;
+															padding: 16px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1.3;
+															color: #db0011;
+														"
+														class="td-mobile box_percent_part-2"
+													>
+														<img
+															src="image/chs_box_28.jpg"
+															width="100%"
+															height="auto"
+															alt=""
+															style="display: block"
+														/>
+													</td>
+													<!-- Spacing -->
+													<td
+														width="12"
+														style="
+															margin: 0;
+															padding: 6px;
+															border: none;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													></td>
+													<!-- End spacing -->
+													<td
+														valign="middle"
+														bgcolor="#FFFFFF"
+														style="
+															margin: 0;
+															padding: 16px;
+															border: 1px solid #979797;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<!-- Header -->
+															<tr>
+																<td
+																	width="60%"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 14px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																>
+																<strong>Hoàn tiền</strong> <strong style="color: #db0011;">1%</strong> không giới hạn cho <span style="white-space: nowrap;">Thẻ Thanh Toán Quốc tế</span></td>
+															  <td
+																	width="20"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																><img
+																	src="image/chs_box_21.png"
+																	width="10"
+																	height="auto"
+																	alt=""
+																	style="display: block"
+																/></td>
+																<td
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 14px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																>
+																  Lương từ 20 triệu VND
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- Spacing -->
+												<tr>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+												</tr>
+												<!-- End spacing -->
+												<!-- 3 -->
+												<tr>
+													<td
+														width="90"
+														align="center"
+														valign="middle"
+														bgcolor="#d2d2d2"
+														style="
+															margin: 0;
+															padding: 16px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1.3;
+															color: #db0011;
+														"
+														class="td-mobile box_percent_part-2"
+													>
+														<img
+															src="image/chs_box_29.jpg"
+															width="100%"
+															height="auto"
+															alt=""
+															style="display: block"
+														/>
+													</td>
+													<!-- Spacing -->
+													<td
+														width="12"
+														style="
+															margin: 0;
+															padding: 6px;
+															border: none;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													></td>
+													<!-- End spacing -->
+													<td
+														valign="middle"
+														bgcolor="#FFFFFF"
+														style="
+															margin: 0;
+															padding: 16px;
+															border: 1px solid #979797;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<!-- Header -->
+															<tr>
+																<td
+																	width="60%"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 14px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																>
+																<strong style="color: #db0011;">2</strong> cặp vé xem phim CGV</td>
+															  <td
+																	width="20"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																><img
+																	src="image/chs_box_21.png"
+																	width="10"
+																	height="auto"
+																	alt=""
+																	style="display: block"
+																/></td>
+																<td
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 14px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																>
+																	Số dư CASA từ 100 - 500 triệu & Lương từ 45 triệu
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- Spacing -->
+												<tr>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+												</tr>
+												<!-- End spacing -->
+												<!-- 3 -->
+												<tr>
+													<td
+														width="90"
+														align="center"
+														valign="middle"
+														bgcolor="#d2d2d2"
+														style="
+															margin: 0;
+															padding: 16px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1.3;
+															color: #db0011;
+														"
+														class="td-mobile box_percent_part-2"
+													>
+														<img
+															src="image/chs_box_30.jpg"
+															width="100%"
+															height="auto"
+															alt=""
+															style="display: block"
+														/>
+													</td>
+													<!-- Spacing -->
+													<td
+														width="12"
+														style="
+															margin: 0;
+															padding: 6px;
+															border: none;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													></td>
+													<!-- End spacing -->
+													<td
+														valign="middle"
+														bgcolor="#FFFFFF"
+														style="
+															margin: 0;
+															padding: 16px;
+															border: 1px solid #979797;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<!-- Header -->
+															<tr>
+																<td
+																	width="60%"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 14px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																>
+																	<strong style="color: #db0011;">4</strong> cặp vé xem phim CGV
+																</td>
+															  <td
+																	width="20"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																><img
+																	src="image/chs_box_21.png"
+																	width="10"
+																	height="auto"
+																	alt=""
+																	style="display: block"
+																/></td>
+																<td
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 14px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																>
+																	Số dư CASA ≥ 500 triệu & Lương từ 45 triệu
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- Spacing -->
+												<tr>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+													<td
+														style="
+															margin: 0;
+															padding: 6px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													></td>
+												</tr>
+												<!-- End spacing -->
+												<!-- 3 -->
+												<tr>
+													<td
+														width="90"
+														align="center"
+														valign="middle"
+														bgcolor="#d2d2d2"
+														style="
+															margin: 0;
+															padding: 16px;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 48px;
+															line-height: 1.3;
+															color: #db0011;
+														"
+														class="td-mobile box_percent_part-2"
+													>
+														<img
+															src="image/chs_box_31.jpg"
+															width="100%"
+															height="auto"
+															alt=""
+															style="display: block"
+														/>
+													</td>
+													<!-- Spacing -->
+													<td
+														width="12"
+														style="
+															margin: 0;
+															padding: 6px;
+															border: none;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													></td>
+													<!-- End spacing -->
+													<td
+														valign="middle"
+														bgcolor="#FFFFFF"
+														style="
+															margin: 0;
+															padding: 16px;
+															border: 1px solid #979797;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+														class="td-mobile"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+														>
+															<!-- Header -->
+															<tr>
+																<td
+																	width="60%"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 14px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																>
+																	<strong style="color: #db0011;">1 lần/năm</strong> sử dụng Airport Fast Track
+																</td>
+															  <td
+																	width="20"
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																><img
+																	src="image/chs_box_21.png"
+																	width="10"
+																	height="auto"
+																	alt=""
+																	style="display: block"
+																/></td>
+																<td
+																	style="
+																		margin: 0;
+																		padding: 0;
+																		border: none;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 14px;
+																		line-height: 1.3;
+																		color: #000000;
+																	"
+																	class="font-color"
+																>
+															    Số dư CASA ≥ 500 triệu &amp; Lương từ 45 triệu </td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<tr>
+													<td
+														style="
+															margin: 0;
+															padding: 15px 0 0 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 14px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													>&nbsp;</td>
+													<td
+														style="
+															margin: 0;
+															padding: 15px 0 0 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 14px;
+															line-height: 1;
+															color: #db0011;
+														"
+														class="td-mobile"
+													>&nbsp;</td>
+													<td
+														style="
+															margin: 0;
+															padding: 15px 0 0 0;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 14px;
+															line-height: 1;
+															color: #FFFFFF;
+														"
+														class="td-mobile"
+													>(*) Điều khoản và điều kiện áp dụng</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td bgcolor="#e7e7e7" class="main_body">
+								<table
+									width="100%"
+									border="0"
+									cellpadding="0"
+									cellspacing="0"
+								>
+									<!-- Header -->
+									<tr>
+										<td
+											align="left"
+											style="
+												margin: 0;
+												padding: 0 150px 0 0;
+												border: none;
+												font-family: Arial, Helvetica, sans-serif !important;
+												font-size: 24px;
+												line-height: 1.3;
+												color: #db0011;
+											"
+											class="title-common"
+										>
+											<strong
+												>Lợi ích dành cho tất cả Khách hàng chuyển qua HSBC:</strong
+											>
+										</td>
+									</tr>
+									<!-- Content -->
+									<tr>
+										<td
+											style="
+												margin: 0;
+												padding: 15px 0 15px 0;
+												border: none;
+												font-family: Arial, Helvetica, sans-serif !important;
+												font-size: 16px;
+												line-height: 1.3;
+												color: #000000;
+											"
+										>
+										  Chỉ cần lương chuyển khoản từ 10 triệu đồng, Quý khách sẽ luôn nhận được các đặc quyền dưới đây
+										</td>
+									</tr>
+									<!-- Main content -->
+									<tr>
+										<td
+											bgcolor="#FFFFFF"
+											style="
+												margin: 0;
+												padding: 16px;
+												border: 1px solid #979797;
+												border: none;
+												font-family: Arial, Helvetica, sans-serif !important;
+												font-size: 16px;
+												line-height: 1.3;
+												color: #000000;
+											"
+											class="border-color background-color"
+										>
+											<table
+												width="100%"
+												border="0"
+												cellpadding="0"
+												cellspacing="0"
+											>
+												<!-- 2 -->
+												<tr>
+												  <td
+														style="
+															margin: 0;
+															padding: 0 0 10px 0;
+															border: none;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+															
+														>
+															<tr>
+																<!-- Left -->
+																<td
+																	width="285"
+																	style="
+																		margin: 0;
+																		padding: 12px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="td-mobile"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				width="60"
+																				align="left"
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 16px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile"
+																			>
+																				<img
+																					src="image/chs_box_32.jpg"
+																					width="50"
+																					height="auto"
+																					alt=""
+																					style="
+																						display: block;
+																					"
+																				/>
+																			</td>
+																			<td
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile font-color"
+																			>
+																				Miễn phí mở và đóng tài khoản</td>
+																		</tr>
+																	</table>
+																</td>
+															  <!-- Spacing -->
+																<td
+																	style="padding: 0"
+																	class="td-mobile"
+																>&nbsp;</td>
+																<!-- End spacing -->
+																<!-- Right -->
+																<td
+																	width="285"
+																	style="
+																		margin: 0;
+																		padding: 12px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="td-mobile"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																		  <td
+																				width="60"
+																				align="left"
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 16px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile"
+																			>
+																				<img
+																					src="image/chs_box_33.jpg"
+																					width="50"
+																					height="auto"
+																					alt=""
+																					style="
+																						display: block;
+																					"
+																				/>
+																			</td>
+																			<td
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile font-color"
+																			>Miễn phí phát hành và phí thường niên Thẻ ghi nợ</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- 2 -->
+												<tr>
+												  <td
+														style="
+															margin: 0;
+															padding: 0 0 10px 0;
+															border: none;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+															
+														>
+															<tr>
+																<!-- Left -->
+																<td
+																	width="285"
+																	style="
+																		margin: 0;
+																		padding: 12px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="td-mobile"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				width="60"
+																				align="left"
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 16px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile"
+																			>
+																			  <img
+																					src="image/chs_box_34.jpg"
+																					width="50"
+																					height="auto"
+																					alt=""
+																					style="
+																						display: block;
+																					"
+																				/>
+																			</td>
+																			<td
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile font-color"
+																			>Miễn phí rút tiền tại <span style="white-space: nowrap;">ATM Visa/ Plus</span></td>
+																		</tr>
+																	</table>
+																</td>
+															  <!-- Spacing -->
+																<td
+																	style="padding: 0"
+																	class="td-mobile"
+																>&nbsp;</td>
+																<!-- End spacing -->
+																<!-- Right -->
+																<td
+																	width="285"
+																	style="
+																		margin: 0;
+																		padding: 12px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="td-mobile"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																		  <td
+																				width="60"
+																				align="left"
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 16px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile"
+																			>
+																			<img
+																					src="image/chs_box_35.jpg"
+																					width="50"
+																					height="auto"
+																					alt=""
+																					style="
+																						display: block;
+																					"
+																				/>
+																		  </td>
+																			<td
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile font-color"
+																			>Miễn phí chuyễn khoản VND nội địa và nước ngoài thông qua ngân hàng trực tuyến</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- 2 -->
+												<tr>
+												  <td
+														style="
+															margin: 0;
+															padding: 0 0 10px 0;
+															border: none;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+															
+														>
+															<tr>
+																<!-- Left -->
+																<td
+																	width="285"
+																	style="
+																		margin: 0;
+																		padding: 12px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="td-mobile"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				width="60"
+																				align="left"
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 16px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile"
+																			>
+																			  <img
+																					src="image/chs_box_36.jpg"
+																					width="50"
+																					height="auto"
+																					alt=""
+																					style="
+																						display: block;
+																					"
+																				/>
+																			</td>
+																			<td
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile font-color"
+																			>Miễn phí chuyển khoản nhanh qua ứng dụng HSBC Vietnam</td>
+																		</tr>
+																	</table>
+																</td>
+															  <!-- Spacing -->
+																<td
+																	style="padding: 0"
+																	class="td-mobile"
+																>&nbsp;</td>
+																<!-- End spacing -->
+																<!-- Right -->
+																<td
+																	width="285"
+																	style="
+																		margin: 0;
+																		padding: 12px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="td-mobile"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																		  <td
+																				width="60"
+																				align="left"
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 16px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile"
+																			>
+																				<img
+																					src="image/chs_box_37.jpg"
+																					width="50"
+																					height="auto"
+																					alt=""
+																					style="
+																						display: block;
+																					"
+																				/>
+																		  </td>
+																			<td
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile font-color"
+																			>Không yêu cầu số dư tối thiếu hàng tháng</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+												<!-- 2 -->
+												<tr>
+												  <td
+														style="
+															margin: 0;
+															padding: 0 0 10px 0;
+															border: none;
+															font-family: Arial, Helvetica,
+																sans-serif !important;
+															font-size: 16px;
+															line-height: 1.3;
+															color: #000000;
+														"
+													>
+														<table
+															width="100%"
+															border="0"
+															cellpadding="0"
+															cellspacing="0"
+															
+														>
+															<tr>
+																<!-- Left -->
+																<td
+																	width="285"
+																	style="
+																		margin: 0;
+																		padding: 12px;
+																		border: 1px solid
+																			#979797;
+																		font-family: Arial,
+																			Helvetica,
+																			sans-serif !important;
+																		font-size: 16px;
+																		line-height: 1.3;
+																		color: #000000;
+																		box-sizing: border-box;
+																	"
+																	class="td-mobile"
+																>
+																	<table
+																		width="100%"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																	>
+																		<tr>
+																			<td
+																				width="60"
+																				align="left"
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 16px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile"
+																			>
+																			  <img
+																					src="image/chs_box_38.jpg"
+																					width="50"
+																					height="auto"
+																					alt=""
+																					style="
+																						display: block;
+																					"
+																				/>
+																			</td>
+																			<td
+																				style="
+																					margin: 0;
+																					padding: 0;
+																					border: none;
+																					font-family: Arial,
+																						Helvetica,
+																						sans-serif !important;
+																					font-size: 14px;
+																					line-height: 1.3;
+																					color: #000000;
+																				"
+																				class="td-mobile font-color"
+																			>Hưởng ưu đãi mở thẻ và miễn phí thường niên 01 năm</td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- Button -->
+								<table
+									width="100%"
+									border="0"
+									cellpadding="0"
+									cellspacing="0"
+									style="padding: 32px 0 0 0"
+								>
+									<tr>
+										<td align="center">
+											<table
+												role="presentation"
+												border="0"
+												cellpadding="0"
+												cellspacing="0"
+												style="text-align: center"
+												class="button"
+											>
+												<tr>
+													<td>Đừng bỏ lỡ cơ hội nhận quà ngay hôm nay!</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<!-- Footer -->
+					<tr>
+					  <td><table width="100%" border="0" cellpadding="0" cellspacing="0" class="chs_body1">
+						  <tr class="chs_body">
+							<td width="40" height="40">&nbsp;</td>
+							<td style="padding: 10px 0 0 0; margin: 0; border: none; line-height: 1.3; font-size: 16px; font-family: Arial, Helvetica, sans-serif !important;"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="chs_body">
+								<tr>
+								  <td style="padding: 0; margin: 0; border: none; line-height: 1.3; font-size: 16px; font-family: Arial, Helvetica, sans-serif !important;">&nbsp;</td>
+								</tr>
+							  </table></td>
+							<td width="40">&nbsp;</td>
+						  </tr>
+						  <tr>
+							<td height="28">&nbsp;</td>
+							<td class="chs_body" align="left" style="padding:0; margin: 0; border: none; line-height: 1.3; font-size: 12px; font-family: Arial, Helvetica, sans-serif !important;">Theo quy định của Ngân hàng Nhà nước Việt Nam, Quý khách vui lòng không sử dụng Thẻ Tín Dụng HSBC cho các mục đích sau:</td>
+							<td height="28">&nbsp;</td>
+						  </tr>
+						  <tr>
+							<td height="28">&nbsp;</td>
+							<td class="chs_body" style="padding:0; margin: 0; border: none; line-height: 1.3; font-size: 16px; font-family: Arial, Helvetica, sans-serif !important;"><table width="100%" border="0" cellpadding="0" cellspacing="0" class="chs_body">
+								<tr>
+								  <td width="10" valign="top" align="left" style="padding: 5px 0 0 0; margin: 0; border: none; line-height: 1.3; font-size: 12px; font-family: Arial, Helvetica, sans-serif !important;">&bull;</td>
+								  <td valign="top" align="left" style="padding: 5px 0 0 0; margin: 0; border: none; line-height: 1.3; font-size: 12px; font-family: Arial, Helvetica, sans-serif !important;">Rút tiền mặt thay cho giao dịch mua bán hàng hóa hoặc cung ứng dịch vụ tại nơi chấp nhận thanh toán Thẻ</td>
+								</tr>
+								<tr>
+								  <td valign="top" align="left" style="padding: 5px 0 0 0; margin: 0; border: none; line-height: 1.3; font-size: 12px; font-family: Arial, Helvetica, sans-serif !important;">&bull;</td>
+								  <td valign="top" align="left" style="padding: 5px 0 0 0; margin: 0; border: none; line-height: 1.3; font-size: 12px; font-family: Arial, Helvetica, sans-serif !important;">Sử dụng cho các giao dịch mua bán hàng hóa hoặc cung ứng dịch vụ không hợp pháp theo quy định của Ngân hàng Nhà nước Việt Nam</td>
+								</tr>
+							  </table></td>
+							<td height="28">&nbsp;</td>
+						  </tr>
+						  <tr>
+							<td height="28">&nbsp;</td>
+							<td class="chs_body" style="padding:0; margin: 0; border: none; line-height: 1.3; font-size: 16px; font-family: Arial, Helvetica, sans-serif !important;">&nbsp;</td>
+							<td height="28">&nbsp;</td>
+						  </tr>
+						  <tr class="chs_body">
+							<td height="35">&nbsp;</td>
+							<td style=" border-top: 1px solid #000000">&nbsp;</td>
+							<td>&nbsp;</td>
+						  </tr>
+						</table></td>
+					</tr>
+					<footer>
+						<table
+							width="100%"
+							cellpadding="0"
+							cellspacing="0"
+							class="footer-container"
+						>
+							<tr>
+								<td class="footer-container-main">
+									<table
+										role="presentation"
+										width="100%"
+										cellpadding="0"
+										cellspacing="0"
+									>
+										<tr>
+											<!-- Cột trái (footer-1) -->
+											<td
+												width="45%"
+												valign="top"
+												align="right"
+												style="padding: 0px 25px 0px 0"
+												class="stack-column-top"
+											>
+												<div style="margin-bottom: 5px">
+													Truy cập
+													<strong>
+														<a
+															href="#"
+															target="_blank"
+															style="
+																color: #db0011;
+																text-decoration: none;
+															"
+														>
+															hsbc.com.vn
+														</a>
+													</strong>
+												</div>
+												<div>
+													<img
+														src="image/chs_img_facebook.jpg"
+														width="12"
+														height="12"
+														alt="facebook"
+														style="vertical-align: middle"
+													/>
+													<a
+														href="#"
+														target="_blank"
+														class="footer-social"
+														title="Liên kết này có thể cho Quý khách truy cập đến trang web khác không phải của HSBC..."
+														style="
+															padding-left: 5px;
+															vertical-align: middle;
+															color: #252525;
+															text-decoration: none;
+															font-size: 12px;
+														"
+													>
+														www.facebook.com/HSBCVietnam
+													</a>
+												</div>
+											</td>
+
+											<!-- Border ngăn cách -->
+											<td
+												class="hide-on-mobile"
+												style="
+													border-left: 3px solid #db0011;
+													padding: 0;
+													margin: 0;
+												"
+											></td>
+
+											<!-- Cột phải (footer-2) -->
+											<td
+												width="53%"
+												valign="top"
+												align="left"
+												style="padding: 0px 0 0px 10px"
+												class="stack-column-bottom"
+											>
+												<div style="margin-bottom: 5px">
+													Gọi
+													<strong>
+														<a
+															href="#"
+															target="_blank"
+															style="
+																color: #db0011;
+																text-decoration: none;
+																padding-left: 5px;
+															"
+														>
+															(84 28) 37 247 247
+														</a>
+													</strong>
+													(miền Nam)
+												</div>
+												<div>
+													Hoặc
+													<strong>
+														<a
+															href="#"
+															target="_blank"
+															style="
+																color: #db0011;
+																text-decoration: none;
+																padding-left: 5px;
+															"
+														>
+															(84 24) 62 707 707
+														</a>
+													</strong>
+													(miền Bắc)
+												</div>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+
+						<table
+							width="100%"
+							border="0"
+							cellpadding="0"
+							cellspacing="0"
+							class="footer_container"
+							style="
+								margin: 0;
+								border: none;
+								font-family: Arial, Helvetica, sans-serif !important;
+								font-size: 16px;
+								line-height: 1.3;
+								color: #000000;
+								background-color: rgb(245, 245, 245);
+							"
+						>
+							<tr>
+								<td>
+									<table
+										width="100%"
+										border="0"
+										cellpadding="0"
+										cellspacing="0"
+									>
+										<tr>
+											<td
+												align="left"
+												class="content_text_footer"
+												style="padding: 0"
+											>
+												Thông tin quan trọng:
+											</td>
+										</tr>
+										<tr>
+											<td align="left" class="content_text_footer">
+												Tài liệu này được thiết kế để sử dụng tại
+												Việt Nam. Các sản phẩm và dịch vụ được đề
+												cập trong tài liệu này nhằm phục vụ cho
+												khách hàng tại Việt Nam. Nếu bạn ở ngoài
+												lãnh thổ Việt Nam, chúng tôi có thể không
+												được phép cung cấp cho bạn các sản phẩm và
+												dịch vụ có sẵn thông qua tài liệu này tại
+												quốc gia hoặc khu vực mà bạn đang ở hoặc
+												cư trú. Tài liệu này không nhằm mục đích
+												phân phối hoặc sử dụng bởi bất kỳ cá nhân
+												nào ở bất kỳ khu vực pháp lý, quốc gia
+												hoặc khu vực nào mà việc phân phối hoặc sử
+												dụng tài liệu này bị hạn chế và sẽ không
+												được phép theo luật hoặc quy định.
+											</td>
+										</tr>
+										<tr>
+											<td align="left" class="content_text_footer">
+												Tài liệu này được cung cấp bởi Ngân hàng
+												TNHH Một thành viên HSBC Việt Nam (“HSBC
+												Việt Nam”). HSBC Việt Nam chịu sự quản lý
+												của Ngân hàng Nhà nước Việt Nam.
+											</td>
+										</tr>
+										<tr>
+											<td align="left" class="content_text_footer">
+												Sở dĩ Quý khách nhận được thư điện tử này
+												bởi vì Quý khách đã chấp thuận cho Ngân
+												hàng TNHH Một thành viên HSBC (Việt Nam)
+												('Ngân hàng, 'của Ngân hàng') gửi đến cho
+												Quý khách các thông tin và chương trình
+												khuyến mãi liên quan đến sản phẩm và dịch
+												vụ của Ngân hàng. Quý khách có quyền chọn
+												lựa không nhận các thông tin và vật phẩm
+												quảng cáo về dịch vụ Ngân hàng bất kỳ lúc
+												nào.
+											</td>
+										</tr>
+										<tr>
+											<td align="left" class="content_text_footer">
+												Để ngừng nhận thư điện tử với thông tin
+												quảng cáo của Ngân hàng, Quý khách vui
+												lòng liên hệ Trung tâm Dịch vụ Khách hàng
+												hoặc đến Chi nhánh/Phòng giao dịch gần
+												nhất của Ngân hàng HSBC để được hỗ trợ.
+												Ngoài ra, Quý khách có thể gửi một thư
+												điện tử (với tiêu đề và nội dung bất kỳ)
+												đến <span>unsubscribe</span
+												><span style="display: none">@</span
+												>@<span>hsbc</span>.<span>com</span>.<span
+													>vn</span
+												>
+												từ hộp thư điện tử mà Quý khách mong muốn
+												ngừng nhận quảng cáo của Ngân hàng. Quý
+												khách vui lòng lưu ý rằng yêu cầu của Quý
+												khách sẽ được ghi nhận ngay khi HSBC nhận
+												được thư điện tử và được thực hiện thành
+												công sớm nhất 4 ngày làm việc sau đó. Tuy
+												nhiên, chúng tôi khuyến khích Quý khách
+												duy trì việc nhận thư điện tử để được cập
+												nhật các thông tin về sản phẩm, dịch vụ
+												mới nhất và các ưu đãi đặc quyền dành
+												riêng cho Quý khách.
+											</td>
+										</tr>
+										<tr>
+											<td align="left" class="content_text_footer">
+												Thư điện tử này là bảo mật và có thể đã
+												đăng ký bảo mật về pháp lý. Trong trường
+												hợp Quý khách không phải là nguời nhận
+												thư, Quý khách không được phép sao chép,
+												chuyển, tiết lộ hoặc sử dụng bất kỳ nội
+												dung nào của thư điện tử. Trong trường hợp
+												Quý khách nhận thư bị lỗi, vui lòng xóa
+												thư và tất cả các bản sao trong hệ thống
+												của Quý khách.
+											</td>
+										</tr>
+										<tr>
+											<td align="left" class="content_text_footer">
+												Xin vui lòng không hồi âm về địa chỉ thư
+												điện tử này. Vui lòng liên hệ Trung tâm
+												dịch vụ Khách Hàng.
+											</td>
+										</tr>
+										<tr>
+											<td align="left" class="content_text_footer">
+												Ngân hàng duy trì chuẩn mực và thủ tục bảo
+												mật nghiêm ngặt để ngăn chặn việc sử dụng
+												trái phép thông tin của khách hàng. HSBC
+												không bao giờ liên lạc bằng email hoặc
+												bằng cách khác để yêu cầu khách hàng xác
+												nhận lại những thông tin cá nhân như tên
+												đăng nhập, mật khẩu đăng nhập hoặc số tài
+												khoản/ thẻ tín dụng ngân hàng. Nếu Quý
+												khách nhận được lời yêu cầu tương tự, xin
+												vui lòng liên hệ với chúng tôi qua Trung
+												tâm dịch vụ Khách Hàng nêu trên.
+											</td>
+										</tr>
+										<tr>
+											<td align="left" class="content_text_footer">
+												Ngân hàng cũng khuyến nghị khách hàng chỉ
+												truy cập Ngân hàng trực tuyến HSBC từ
+												trang web ngân hàng. Đừng bao giờ nhấn vào
+												bất kỳ liên kết nào trong thư điện tử để
+												đăng nhập Ngân hàng trực tuyến của quý
+												khách. Thay vào đó, hãy nhập trực tiếp địa
+												chỉ trang web vào thanh địa chỉ trình
+												duyệt để từ đó truy cập ngân hàng trực
+												tuyến của chúng tôi.
+											</td>
+										</tr>
+										<tr>
+											<td align="left" class="content_text_footer">
+												© Bản quyền 2024 thuộc về Ngân hàng TNHH
+												Một thành viên HSBC (Việt Nam). Tất cả các
+												quyền được bảo hộ.
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+					</footer>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
