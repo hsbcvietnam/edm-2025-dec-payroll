@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="vi">
 	<head>
 		<meta charset="UTF-8" />
@@ -9,50 +9,50 @@
 			* {
 				box-sizing: border-box;
 			}
-
 			body {
 				margin: 0 auto;
 				font-family: Arial, sans-serif;
 				font-size: 16px;
 				line-height: 24px;
 				width: 700px;
-				background: #f3f3f3;
+				background: #ffffff;
 				color: #333333;
 			}
-
 			p {
 				font-size: 16px;
 				margin: 16px 0;
 			}
-
 			/* Common */
 			.button {
-				background: #db0011;
+				background: #ffffff;
 				padding: 16px 60px;
 				display: inline-block;
-				color: white;
+				color: black;
 				cursor: pointer;
-				font-weight: bold;
+				font-weight: unbold;
 				font-size: 16px;
 			}
 
-			.button-black {
-				background: #000000;
-				padding: 16px 60px;
-				display: inline-block;
-				color: white;
-				cursor: pointer;
-				font-weight: bold;
+			.text-common {
+				margin: 0;
+				padding: 0;
+				border: none;
+				font-family: Arial, Helvetica, sans-serif !important;
 				font-size: 16px;
+				line-height: 1.3;
+				color: #000000;
 			}
 
-			/* Use to change dark mode */
 			.font-color {
 				color: #000000;
 			}
 
 			.background-color {
 				background: #ffffff;
+			}
+
+			.font-size-24 {
+				font-size: 24px !important;
 			}
 
 			.border-color {
@@ -63,18 +63,29 @@
 				background: #ffffff;
 			}
 
-			/* End */
-
+			.button-primary {
+				margin: 0;
+				padding: 15px;
+				font-family: Arial, Helvetica, sans-serif !important;
+				font-size: 18px;
+				line-height: 1.3;
+				color: #000000;
+				background: #e3e3e3;
+			}
 			/* End common CSS */
+
 			.header-intro {
 				padding-top: 0px;
-				font-size: 30px;
+				font-size: 32px;
 				color: #000000;
 				line-height: 40px;
 				font-family: Arial, Helvetica, sans-serif;
 			}
 
 			/* Part 1 */
+			.img-part-1 {
+				padding: 0 16px 0 0;
+			}
 
 			/* Part 2 */
 			.header-part-2 {
@@ -140,9 +151,31 @@
 				padding: 32px 45px;
 			}
 
+			/* info person */
+				.avt-wrapper {
+					border: 0px solid #d7d8d6 !important;
+				}
+
+				.avt-wrapper,
+				.avt-wrapper tr,
+				.avt-wrapper td {
+					display: block !important;
+					width: 100% !important;
+					max-width: 100% !important;
+				}
+				.avt-info-cell {
+					padding: 24px 12px 16px 12px !important;
+				}
+				.avt-img-cell {
+					padding: 0 !important;
+				}
+				.avt-img-cell img {
+					width: 100% !important;
+					height: auto !important;
+				}
 			/* Footer */
 			footer {
-				background-color: #e4e8eb;
+				background-color: #ffffff;
 			}
 
 			.footer-container {
@@ -181,7 +214,6 @@
 					color: #ffffff;
 				}
 
-				/* Use to change dark mode */
 				.font-color {
 					color: #ffffff !important;
 				}
@@ -198,22 +230,14 @@
 					background: #212121 !important;
 				}
 
-				.cell-common-style {
-					border: 1px solid #ededed;
-					background-color: #212121;
+				/* CSS intro */
+				.header-intro {
 					color: #ffffff;
 				}
 
-				.button-white {
-					color: #ffffff !important;
-					background-color: #212121 !important;
-					border-color: #ededed !important;
-				}
-
-				/* End */
-
-				/* CSS intro */
-				.header-intro {
+				.cell-common-style {
+					border: 1px solid #ededed;
+					background-color: #212121;
 					color: #ffffff;
 				}
 
@@ -265,13 +289,7 @@
 				}
 
 				/* Common */
-				.title-common {
-					padding-right: 0 !important;
-					padding-left: 0 !important;
-				}
-
-				.button,
-				.button-black {
+				.button {
 					width: 100% !important;
 					display: table;
 				}
@@ -282,10 +300,6 @@
 					max-width: 100% !important;
 				}
 
-				.td-mobile.none-box img {
-					display: none !important;
-				}
-
 				.button-primary-container {
 					width: 100% !important;
 					max-width: 100% !important;
@@ -293,11 +307,7 @@
 
 				/* Part 1 */
 				.img-part-1 {
-					width: 100% !important;
-				}
-
-				.fake-gap {
-					padding: 32px 0 0 0 !important;
+					padding: 16px 0 !important;
 				}
 
 				/* Part 2 */
@@ -305,21 +315,19 @@
 					padding: 0 !important;
 				}
 
-				.box_percent_part-2 {
-					padding: 16px 0 !important;
+				.card-content-part-2 {
+					margin: 0;
+					padding: 16px;
+					border: none;
 				}
 
-				.box-description-part-2 {
+				.img-chs-box {
 					padding: 16px 0 !important;
 				}
 
 				/* Part 3 */
 				.header-part-3 {
 					padding: 0 0 0 0 !important;
-				}
-
-				.box-description-part-3 {
-					padding: 16px 0 !important;
 				}
 
 				/* Part 4 */
@@ -348,10 +356,6 @@
 				/* Part 6 */
 				.header-part-6 {
 					padding: 0 !important;
-				}
-
-				.arrow-icon-part-6 {
-					transform: rotate(90deg) translateX(-100%);
 				}
 
 				.hidden-border-card-p-6 {
@@ -408,7 +412,6 @@
 			}
 		</style>
 	</head>
-
 	<body>
 		<!-- Pre-header -->
 		<div
@@ -423,7 +426,7 @@
 				overflow: hidden;
 			"
 		>
-			Chúng tôi có ưu đãi đặc biệt dành cho bạn hôm nay...
+			From cashback to CGV ticket, let’s maximize your salary benefits!
 		</div>
 		<!-- Body content -->
 		<table
@@ -454,7 +457,6 @@
 										style="display: block"
 									/>
 								</td>
-<!--
 								<td align="right" valign="bottom">
 									<img
 										src="image/chs_hsbc_cards.jpg"
@@ -463,7 +465,6 @@
 										style="display: block"
 									/>
 								</td>
--->
 							</tr>
 						</table>
 						<img
@@ -475,7 +476,6 @@
 					</div>
 					<!-- Bọc padding -->
 					<table width="100%" cellpadding="0" cellspacing="0" border="0">
-						<!-- Intro  -->
 						<tr>
 							<td class="main_body">
 								<!-- Intro -->
@@ -491,52 +491,432 @@
 												valign="top"
 												align="left"
 												class="header-intro"
-											>Transfer your salary to HSBC, <br />turn your income into privileges</td>
+											>
+												Transfer your salary to HSBC, <br />turn your income into privileges
+											</td>
 										</tr>
 										<tr>
 											<td
 												align="left"
 												valign="top"
-												class="text-common"
+												class="td-mobile"
 												style="padding: 16px 0 0 0"
-											>Enjoy unlimited cashback, CGV movie tickets, and airport Fast Track service, all unlocked with just one simple salary transfer to HSBC. Transfer your salary today to unlock privileges that match your ambition!</td>
+											>
+												Enjoy unlimited cashback, CGV movie tickets, and airport Fast Track service, all unlocked with just one simple salary transfer to HSBC. Transfer your salary today to unlock privileges that match your ambition!
+											</td>
 										</tr>
 									</table>
 								</div>
 							</td>
 						</tr>
-						<!-- Part 1 -->
 						<tr>
 							<td bgcolor="#e7e7e7" class="main_body">
+								<!-- Part 1 -->
 								<table
 									width="100%"
 									border="0"
 									cellpadding="0"
 									cellspacing="0"
 								>
-									<!-- Image -->
+								<tr>
+									<td
+										style="
+											margin: 0;
+											padding: 0 0 32px 0;
+											border: none;
+											font-family: Arial, Helvetica, sans-serif !important;
+											font-size: 16px;
+											line-height: 1.3;
+											color: #000000;
+										"
+									>
+										<img
+											src="image/chs_box_25.jpg"
+											width="100%"
+											height="auto"
+											alt=""
+											style="display: block"
+										/>
+									</td>
+								</tr>
+								<!-- Header -->
+								<tr>
+									<td
+										align="left"
+										style="
+											margin: 0;
+											padding: 0;
+											border: none;
+											font-family: Arial, Helvetica, sans-serif !important;
+											font-size: 24px;
+											line-height: 1.3;
+											color: #db0011;
+										"
+										class="title-common"
+									><strong>Earn More with Your Savings</strong></td>
+								</tr>
+								<!-- Content -->
+								<tr>
+									<td
+										style="
+											margin: 0;
+											padding: 15px 0 0 0;
+											border: none;
+											font-family: Arial, Helvetica, sans-serif !important;
+											font-size: 16px;
+											line-height: 1.3;
+											color: #000000;
+										"
+									>Maintain your balance, earn more with CASA interest up to 0.25% p.a.</td>
+								</tr>
+
 									<tr>
-										<td
-											style="
-												margin: 0;
-												padding: 0 0 32px 0;
-												border: none;
-												font-family: Arial, Helvetica, sans-serif !important;
-												font-size: 16px;
-												line-height: 1.3;
-												color: #000000;
-											"
+									<td
+										style="
+											padding: 12px 0 0 0;
+											margin: 0;
+											border: none;
+											line-height: 1.3;
+											font-size: 16px;
+											font-family: Arial, Helvetica, sans-serif !important;
+										"
+									>
+										<table
+											width="100%"
+											border="0"
+											cellpadding="0"
+											cellspacing="0"
 										>
-											<img
-												src="image/chs_box_25.jpg"
-												width="100%"
-												height="auto"
-												alt=""
-												style="display: block"
-											/>
-										</td>
-									</tr>
-									<!-- Header -->
+											<tr>
+												<td
+													align="center"
+													bgcolor="#ba1110"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+														color: #ffffff;
+													"
+												>
+													<strong>CASA Balance (VND)</strong>
+												</td>
+												<td
+													width="10"
+													align="center"
+													valign="middle"
+
+													style="
+														padding: 0;
+														margin: 0;
+														border: none;
+														line-height: 1.3;
+														color: #ffffff;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>&nbsp;
+
+												</td>
+												<td
+													align="center"
+													bgcolor="#ba1110"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+														color: #ffffff;
+													"
+												>
+													<strong
+														>Interest Rate (p.a.)
+														</strong
+													>
+												</td>
+											</tr>
+											<!-- Spacing -->
+											<tr>
+												<td
+													align="center"
+													valign="middle"
+													style="
+														padding: 0;
+														margin: 0;
+														border: none;
+														line-height: 1.3;
+														font-size: 1px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+														color: #000000;
+													"
+												>&nbsp;
+
+												</td>
+												<td
+													align="center"
+													valign="middle"
+													style="
+														padding: 0;
+														margin: 0;
+														border: none;
+														line-height: 1.3;
+														font-size: 1px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+														color: #000000;
+													"
+												>
+													<img
+														src="image/dash.png"
+														width="15"
+														height="auto"
+														alt=""
+														style="display: block"
+													/>
+												</td>
+												<td
+													align="center"
+													valign="middle"
+													style="
+														padding: 0;
+														margin: 0;
+														border: none;
+														line-height: 1.3;
+														font-size: 1px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+														color: #000000;
+													"
+												>&nbsp;
+
+												</td>
+											</tr>
+											<!-- End spacing -->
+											<tr>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														border-bottom: 1px solid #ba1110;
+
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+													50 - 100 million
+												</td>
+												<td
+													width="10"
+													align="center"
+													valign="middle"
+													style="
+														padding: 0;
+														margin: 0;
+														border: none;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+
+												</td>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														border-bottom: 1px solid #ba1110;
+
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+													0.05%
+												</td>
+											</tr>
+											<tr>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														border-bottom: 1px solid #ba1110;
+
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+													100 - 250 million
+												</td>
+												<td
+													width="10"
+													align="center"
+													valign="middle"
+													style="
+														padding: 0;
+														margin: 0;
+														border: none;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+
+												</td>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														border-bottom: 1px solid #ba1110;
+
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+													0.10%
+												</td>
+											</tr>
+											<tr>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														border-bottom: 1px solid #ba1110;
+
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+													250 - 500 million
+												</td>
+												<td
+													width="10"
+													align="center"
+													valign="middle"
+													style="
+														padding: 0;
+														margin: 0;
+														border: none;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+
+												</td>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														border-bottom: 1px solid #ba1110;
+
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+													0.20%
+												</td>
+											</tr>
+											<tr>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														border-bottom: 1px solid #ba1110;
+
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+													From 500 million and above
+												</td>
+												<td
+													width="10"
+													align="center"
+													valign="middle"
+													style="
+														padding: 0;
+														margin: 0;
+														border: none;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+
+												</td>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														border-bottom: 1px solid #ba1110;
+
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>
+													0.25%
+												</td>
+											</tr>
+
+
+										</table>
+									</td>
+								</tr>
+
+								</table>
+								<!--End part 1-->
+							</td>
+						</tr>
+						<tr>
+							<td bgcolor="#db0011" class="main_body">
+								<!-- Part 2 -->
+								<table
+									width="100%"
+									border="0"
+									cellpadding="0"
+									cellspacing="0"
+								>
 									<tr>
 										<td
 											align="left"
@@ -547,828 +927,10 @@
 												font-family: Arial, Helvetica, sans-serif !important;
 												font-size: 24px;
 												line-height: 1.3;
-												color: #db0011;
-											"
-											class="title-common"
-										><strong>Earn More with Your Savings</strong></td>
-									</tr>
-									<!-- Content -->
-									<tr>
-										<td
-											style="
-												margin: 0;
-												padding: 15px 0 0 0;
-												border: none;
-												font-family: Arial, Helvetica, sans-serif !important;
-												font-size: 16px;
-												line-height: 1.3;
-												color: #000000;
-											"
-										>Maintain your balance, earn more with CASA interest up to 0.25% p.a.</td>
-									</tr>
-									<!-- Main content -->
-									<tr>
-										<td
-											style="
-												margin: 0;
-												padding: 12px 0 0 0;
-												border: none;
-												font-family: Arial, Helvetica, sans-serif !important;
-												font-size: 14px;
-												line-height: 1.3;
-												color: #000000;
-											"
-										>
-											<table
-												width="100%"
-												border="0"
-												cellpadding="0"
-												cellspacing="0"
-											>
-												<!-- first row -->
-												<tr>
-													<!-- Column left -->
-													<td
-														bgcolor="#000000"
-														style="
-															margin: 0;
-															padding: 0;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<tr>
-																<td
-																	width="305"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-
-																		color: #000000;
-																		box-sizing: border-box;
-																		   color: #FFFFFF;
-																	"
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
-																		<tr>
-																			<td
-																				align="center"
-																				style="
-																					margin: 0;
-																					padding: 10px 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 16px;
-																					line-height: 1.3;
-																					color: #FFFFFF;
-																				"
-																				class="font-color"
-																			>
-																			  <strong>CASA Balance (VND)</strong></td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-													<!-- Spacing -->
-													<td
-														style="
-															margin: 0;
-															padding: 0 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														
-													>&nbsp;</td>
-													<!-- Spacing -->
-													<!-- Column right -->
-													<td
-														bgcolor="#000000"
-														style="
-															margin: 0;
-															padding: 0;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<tr>
-																<td
-																	width="305"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																		   color: #FFFFFF;
-																	"
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
-																		<tr>
-																			<td
-																				align="center"
-																				style="
-																					margin: 0;
-																					padding: 10px 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 16px;
-																					line-height: 1.3;
-																					color: #FFFFFF;
-																				"
-																				class="font-color"
-																			>
-																			  <strong>Interest Rate (p.a.)</strong></td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<tr>
-													<!-- Column left -->
-													<td
-														style="
-															margin: 0;
-															padding: 10px 0 5px 0;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<tr>
-																<td
-																	width="305"
-																	bgcolor="#FFFFFF"
-																	style="
-																		margin: 0;
-																		padding: 10px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class="border-color background-color"
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
-																		<tr>
-																			<td
-																				align="center"
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class="font-color"
-																			>50 - 100 million</td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-													<!-- Spacing -->
-													<td
-														style="
-															margin: 0;
-															padding: 0 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														
-													>&nbsp;</td>
-													<!-- Spacing -->
-													<!-- Column right -->
-													<td
-														style="
-															margin: 0;
-															padding: 10px 0 5px 0;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<tr>
-																<td
-																	width="305"
-																	bgcolor="#FFFFFF"
-																	style="
-																		margin: 0;
-																		padding: 10px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class="border-color background-color"
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
-																		<tr>
-																			<td
-																				align="center"
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class="font-color"
-																			>
-																			  0.05%
-																			</td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<tr>
-													<!-- Column left -->
-													<td
-														style="
-															margin: 0;
-															padding: 0 0 5px 0;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<tr>
-																<td
-																	width="305"
-																	bgcolor="#FFFFFF"
-																	style="
-																		margin: 0;
-																		padding: 10px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class="border-color background-color"
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
-																		<tr>
-																			<td
-																				align="center"
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class="font-color"
-																			>100 - 250 million</td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-													<!-- Spacing -->
-													<td
-														style="
-															margin: 0;
-															padding: 0 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														
-													>&nbsp;</td>
-													<!-- Spacing -->
-													<!-- Column right -->
-													<td
-														style="
-															margin: 0;
-															padding: 0 0 5px 0;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<tr>
-																<td
-																	width="305"
-																	bgcolor="#FFFFFF"
-																	style="
-																		margin: 0;
-																		padding: 10px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class="border-color background-color"
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
-																		<tr>
-																			<td
-																				align="center"
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class="font-color"
-																			>
-																			  0.10%
-																			</td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<tr>
-													<!-- Column left -->
-													<td
-														style="
-															margin: 0;
-															padding: 0 0 5px 0;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<tr>
-																<td
-																	width="305"
-																	bgcolor="#FFFFFF"
-																	style="
-																		margin: 0;
-																		padding: 10px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class="border-color background-color"
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
-																		<tr>
-																			<td
-																				align="center"
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class="font-color"
-																			>250 - 500 million</td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-													<!-- Spacing -->
-													<td
-														style="
-															margin: 0;
-															padding: 0 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														
-													>&nbsp;</td>
-													<!-- Spacing -->
-													<!-- Column right -->
-													<td
-														style="
-															margin: 0;
-															padding: 0 0 5px 0;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<tr>
-																<td
-																	width="305"
-																	bgcolor="#FFFFFF"
-																	style="
-																		margin: 0;
-																		padding: 10px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class="border-color background-color"
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
-																		<tr>
-																			<td
-																				align="center"
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class="font-color"
-																			>
-																			  0.20%
-																			</td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<tr>
-													<!-- Column left -->
-													<td
-														bgcolor="#FFFFFF"
-														style="
-															margin: 0;
-															padding: 0;
-															border: 1px solid #979797;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														class="border-color background-color"
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<tr>
-																<td
-																	width="305"
-																	style="
-																		margin: 0;
-																		padding: 10px;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
-																		<tr>
-																			<td
-																				align="center"
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class="font-color"
-																			>
-																			  From 500 million and above</td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-													<!-- Spacing -->
-													<td
-														style="
-															margin: 0;
-															padding: 0 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-													>&nbsp;</td>
-													<!-- Spacing -->
-													<!-- Column right -->
-													<td
-														bgcolor="#FFFFFF"
-														style="
-															margin: 0;
-															padding: 0;
-															border: 1px solid #979797;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-															box-sizing: border-box;
-														"
-														class="border-color background-color"
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<tr>
-																<td
-																	width="305"
-																	style="
-																		margin: 0;
-																		padding: 10px;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
-																		<tr>
-																			<td
-																				align="center"
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class="font-color"
-																			>
-																			  0.25%</td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td bgcolor="#db0011" class="main_body">
-								<table
-									width="100%"
-									border="0"
-									cellpadding="0"
-									cellspacing="0"
-								>
-									<tr>
-										<td
-											align="left"
-											style="
-												margin: 0;
-												padding: 0 150px 0 0;
-												border: none;
-												font-family: Arial, Helvetica, sans-serif !important;
-												font-size: 24px;
-												line-height: 1.3;
 												color: #FFFFFF;
 											"
 											class="title-common"
-										><strong>Unlock these benefits when meeting the below conditions:</strong></td>
+										><strong>Unlock these benefits when meeting <span style="white-space: nowrap;">the below conditions:</span></strong></td>
 									</tr>
 									<tr>
 										<td
@@ -1391,965 +953,388 @@
 											/>
 										</td>
 									</tr>
-									<!-- Main content -->
-									<tr>
-										<td
-											style="
-												margin: 0;
-												padding: 0 0 15px 0;
-												border: none;
-												font-family: Arial, Helvetica, sans-serif !important;
-												font-size: 16px;
-												line-height: 1.3;
-												color: #000000;
-											"
+								<tr>
+									<td
+										bgcolor="#FFFFFF"
+										style="
+											padding: 0;
+											margin: 0;
+											border: none;
+											line-height: 1.3;
+											font-size: 16px;
+											font-family: Arial, Helvetica, sans-serif !important;
+										"
+									>
+										<table
+											width="100%"
+											border="0"
+											cellpadding="0"
+											cellspacing="0"
 										>
-											<table
-												width="100%"
-												border="0"
-												cellpadding="0"
-												cellspacing="0"
-											>
-												<!-- 1 -->
-												<tr>
-													<td
-														width="90"
-														align="center"
-														valign="middle"
+											<tr>
+												<td
+													width="36"
+													align="center"
+													bgcolor="#ba1110"
+													class="td-mobile img-chs-box"
+												>&nbsp;
+												</td>					
+												<td
+													align="center"
+													bgcolor="#ba1110"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+														color: #ffffff;
+														text-transform: uppercase;
+													"
+												>
+													<strong>Rewards<sup style="font-size: 14px;">(*)</sup></strong>
+												</td>
+												<td
+													width="2"
+													align="center"
+													bgcolor="#ba1110"
+													class="td-mobile img-chs-box"
+												>&nbsp;
+												</td>
+												<td 
+													width="210"
+													align="center"
+													bgcolor="#ba1110"
+													style="
+														padding: 5px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+														color: #ffffff;
+														text-transform: uppercase;
+													"
+												>
+													<strong>Condition (VND)</strong>
+
+												</td>
+											</tr>
+											<tr>
+												<td
+													width="36"
+													align="center"
+													valign="middle"
+													bgcolor="#d2d2d2"
+													style="
+														padding: 10px;
+													"
+													class="td-mobile"
+												>
+													<img
+														src="image/chs_box_27.jpg"
+														width="36"
+														height="auto"
+														alt=""
 														style="
-															margin: 0;
-															padding: 16px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1.3;
-															color: #db0011;
+															display: block;
 														"
-														class="box_percent_part-2"
-													>&nbsp;
-														
-													</td>
-													<!-- Spacing -->
-													<td
-														width="12"
-														style="
-															margin: 0;
-															padding: 6px;
-															border: none;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
-													></td>
-													<!-- End spacing -->
-													<td
-														valign="middle"
-														bgcolor="#d5d5d5"
-														style="
-															margin: 0;
-															padding: 16px;
-															border: 1px solid #979797;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
+													/>
+												</td>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 10px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;	
+													"
+												>
+													<strong>Extra</strong> <strong style="color: #db0011;">2%</strong> <strong>cashback</strong> on credit card<br>Special personal loan interest rate up to <strong style="color: #db0011;">1.5%</strong>
+												</td>						
+												<td
+													width="2"
+													align="center"
+													bgcolor="#FFFFFF"
+													style="padding: 10px 0"
+													class="td-mobile img-chs-box"
+												>
 													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<!-- Header -->
-															<tr>
-																<td
-																	width="60%"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #db0011;
-																	"
-																	class="font-color"
-																>
-																	<strong>Rewards<sup style="font-size: 12px;">(*)</sup></strong>
-																</td>
-															  <td
-																	width="30"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																>&nbsp;</td>
-																<td
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #db0011;
-																	"
-																	class="font-color"
-																>
-																	<strong>Condition (VND)</strong>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<!-- Spacing -->
-												<tr>
-													<td
+												</td>
+												<td 
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 10px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>Salary ≥ 10 million</td>
+											</tr>
+											<tr>
+												<td
+													width="36"
+													align="center"
+													valign="middle"
+													bgcolor="#d2d2d2"
+													style="
+														padding: 10px;
+													"
+													class="td-mobile"
+												>
+													<img
+														src="image/chs_box_28.jpg"
+														width="36"
+														height="auto"
+														alt=""
 														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
+															display: block;
 														"
-													></td>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-												</tr>
-												<!-- End spacing -->
-												<!-- 2 -->
-												<tr>
-													<td
-														width="90"
-														align="center"
-														valign="middle"
-														bgcolor="#d2d2d2"
-														style="
-															margin: 0;
-															padding: 16px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1.3;
-															color: #db0011;
-														"
-														class="box_percent_part-2"
+													/>
+												</td>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 10px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;	
+													"
+												>
+													<strong>Unlimited</strong> <strong style="color: #db0011;">1%</strong> cashback on debit card
+												</td>						
+												<td
+													width="2"
+													align="center"
+													bgcolor="#FFFFFF"
+													style="padding: 10px 0"
+													class="td-mobile img-chs-box"
+												>
 													>
-														<img
-															src="image/chs_box_27.jpg"
-															width="100%"
-															height="auto"
-															alt=""
-															style="display: block"
-														/>
-													</td>
-													<!-- Spacing -->
-													<td
-														width="12"
+												</td>
+												<td 
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 10px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>Salary ≥ 20 million</td>
+											</tr>
+											<tr>
+												<td
+													width="36"
+													align="center"
+													valign="middle"
+													bgcolor="#d2d2d2"
+													style="
+														padding: 10px;
+													"
+													class="td-mobile"
+												>
+													<img
+														src="image/chs_box_29.jpg"
+														width="36"
+														height="auto"
+														alt=""
 														style="
-															margin: 0;
-															padding: 6px;
-															border: none;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
+															display: block;
 														"
-													></td>
-													<!-- End spacing -->
-													<td
-														valign="middle"
-														bgcolor="#FFFFFF"
-														style="
-															margin: 0;
-															padding: 16px;
-															border: 1px solid #979797;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
+													/>
+												</td>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 10px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;	
+													"
+												>
+													<strong style="color: #db0011;">2</strong> pairs CGV ticket
+												</td>						
+												<td
+													width="2"
+													align="center"
+													bgcolor="#FFFFFF"
+													style="padding: 10px 0"
+													class="td-mobile img-chs-box"
+												>
 													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<!-- Header -->
-															<tr>
-															  <td
-																	width="60%"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 14px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																>
-																	<strong>Extra</strong> <strong style="color: #db0011;">2%</strong> <strong>cashback</strong> on credit card<br>Special personal loan interest rate up to <strong style="color: #db0011;">1.5%</strong>
-																</td>
-															  <td
-																	width="30"
-																  	align="center"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																><img
-																	src="image/chs_box_21.png"
-																	width="10"
-																	height="auto"
-																	alt=""
-																	style="display: block"
-																/></td>
-																<td
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 14px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																>Salary  ≥ 10 million</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<!-- Spacing -->
-												<tr>
-													<td
+												</td>
+												<td 
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 10px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>CASA from 100 - 500 million and salary ≥ 45 million</td>
+											</tr>
+											<tr>
+												<td
+													width="36"
+													align="center"
+													valign="middle"
+													bgcolor="#d2d2d2"
+													style="
+														padding: 10px;
+													"
+													class="td-mobile"
+												>
+													<img
+														src="image/chs_box_30.jpg"
+														width="36"
+														height="auto"
+														alt=""
 														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
+															display: block;
 														"
-													></td>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-												</tr>
-												<!-- End spacing -->
-												<!-- 3 -->
-												<tr>
-													<td
-														width="90"
-														align="center"
-														valign="middle"
-														bgcolor="#d2d2d2"
-														style="
-															margin: 0;
-															padding: 16px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1.3;
-															color: #db0011;
-														"
-														class="box_percent_part-2"
+													/>
+												</td>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 10px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;	
+													"
+												>
+													<strong style="color: #db0011;">4</strong> pairs CGV ticket
+												</td>						
+												<td
+													width="2"
+													align="center"
+													bgcolor="#FFFFFF"
+													style="padding: 10px 0"
+													class="td-mobile img-chs-box"
+												>
 													>
-														<img
-															src="image/chs_box_28.jpg"
-															width="100%"
-															height="auto"
-															alt=""
-															style="display: block"
-														/>
-													</td>
-													<!-- Spacing -->
-													<td
-														width="12"
+												</td>
+												<td 
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 10px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>CASA ≥ 500M million and salary ≥ 45 million</td>
+											</tr>
+											<tr>
+												<td
+													width="36"
+													align="center"
+													valign="middle"
+													bgcolor="#d2d2d2"
+													style="
+														padding: 10px;
+													"
+													class="td-mobile"
+												>
+													<img
+														src="image/chs_box_31.jpg"
+														width="36"
+														height="auto"
+														alt=""
 														style="
-															margin: 0;
-															padding: 6px;
-															border: none;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
+															display: block;
 														"
-													></td>
-													<!-- End spacing -->
-													<td
-														valign="middle"
-														bgcolor="#FFFFFF"
-														style="
-															margin: 0;
-															padding: 16px;
-															border: 1px solid #979797;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
+													/>
+												</td>
+												<td
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 10px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;	
+													"
+												>
+													<strong style="color: #db0011;">1x/year</strong> Airport Fast Track
+												</td>						
+												<td
+													width="2"
+													align="center"
+													bgcolor="#FFFFFF"
+													style="padding: 10px 0"
+													class="td-mobile img-chs-box"
+												>
 													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<!-- Header -->
-															<tr>
-																<td
-																	width="60%"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 14px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																>
-																<strong>Unlimited</strong> <strong style="color: #db0011;">1%</strong> cashback on debit card</td>
-															  <td
-																	width="30"
-																  	align="center"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																><img
-																	src="image/chs_box_21.png"
-																	width="10"
-																	height="auto"
-																	alt=""
-																	style="display: block"
-																/></td>
-																<td
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 14px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																>Salary ≥ 20 million</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<!-- Spacing -->
-												<tr>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-												</tr>
-												<!-- End spacing -->
-												<!-- 3 -->
-												<tr>
-													<td
-														width="90"
-														align="center"
-														valign="middle"
-														bgcolor="#d2d2d2"
-														style="
-															margin: 0;
-															padding: 16px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1.3;
-															color: #db0011;
-														"
-														class="box_percent_part-2"
-													>
-														<img
-															src="image/chs_box_29.jpg"
-															width="100%"
-															height="auto"
-															alt=""
-															style="display: block"
-														/>
-													</td>
-													<!-- Spacing -->
-													<td
-														width="12"
-														style="
-															margin: 0;
-															padding: 6px;
-															border: none;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
-													></td>
-													<!-- End spacing -->
-													<td
-														valign="middle"
-														bgcolor="#FFFFFF"
-														style="
-															margin: 0;
-															padding: 16px;
-															border: 1px solid #979797;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<!-- Header -->
-															<tr>
-																<td
-																	width="60%"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 14px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																>
-																<strong style="color: #db0011;">2</strong> pairs CGV ticket</td>
-															  <td
-																	width="30"
-																  	align="center"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																><img
-																	src="image/chs_box_21.png"
-																	width="10"
-																	height="auto"
-																	alt=""
-																	style="display: block"
-																/></td>
-																<td
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 14px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																>CASA from 100 – 500 million and salary ≥ 45 million</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<!-- Spacing -->
-												<tr>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-												</tr>
-												<!-- End spacing -->
-												<!-- 3 -->
-												<tr>
-													<td
-														width="90"
-														align="center"
-														valign="middle"
-														bgcolor="#d2d2d2"
-														style="
-															margin: 0;
-															padding: 16px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1.3;
-															color: #db0011;
-														"
-														class="box_percent_part-2"
-													>
-														<img
-															src="image/chs_box_30.jpg"
-															width="100%"
-															height="auto"
-															alt=""
-															style="display: block"
-														/>
-													</td>
-													<!-- Spacing -->
-													<td
-														width="12"
-														style="
-															margin: 0;
-															padding: 6px;
-															border: none;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
-													></td>
-													<!-- End spacing -->
-													<td
-														valign="middle"
-														bgcolor="#FFFFFF"
-														style="
-															margin: 0;
-															padding: 16px;
-															border: 1px solid #979797;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<!-- Header -->
-															<tr>
-																<td
-																	width="60%"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 14px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																>
-																	<strong style="color: #db0011;">4</strong> pairs CGV ticket
-																</td>
-															  <td
-																	width="30"
-																  	align="center"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																><img
-																	src="image/chs_box_21.png"
-																	width="10"
-																	height="auto"
-																	alt=""
-																	style="display: block"
-																/></td>
-																<td
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 14px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																>CASA ≥ 500M million and salary ≥ 45 million</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<!-- Spacing -->
-												<tr>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-													<td
-														style="
-															margin: 0;
-															padding: 6px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1;
-															color: #db0011;
-														"
-													></td>
-												</tr>
-												<!-- End spacing -->
-												<!-- 3 -->
-												<tr>
-													<td
-														width="90"
-														align="center"
-														valign="middle"
-														bgcolor="#d2d2d2"
-														style="
-															margin: 0;
-															padding: 16px;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 48px;
-															line-height: 1.3;
-															color: #db0011;
-														"
-														class="box_percent_part-2"
-													>
-														<img
-															src="image/chs_box_31.jpg"
-															width="100%"
-															height="auto"
-															alt=""
-															style="display: block"
-														/>
-													</td>
-													<!-- Spacing -->
-													<td
-														width="12"
-														style="
-															margin: 0;
-															padding: 6px;
-															border: none;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
-													></td>
-													<!-- End spacing -->
-													<td
-														valign="middle"
-														bgcolor="#FFFFFF"
-														style="
-															margin: 0;
-															padding: 16px;
-															border: 1px solid #979797;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-														>
-															<!-- Header -->
-															<tr>
-																<td
-																	width="60%"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 14px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																>
-																	<strong style="color: #db0011;">1x/year</strong> Airport Fast Track</td>
-															  <td
-																	width="30"
-																  	align="center"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																><img
-																	src="image/chs_box_21.png"
-																	width="10"
-																	height="auto"
-																	alt=""
-																	style="display: block"
-																/></td>
-																<td
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 14px;
-																		line-height: 1.3;
-																		color: #000000;
-																	"
-																	class="font-color"
-																>CASA ≥ 500M million and salary ≥ 45 million</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<tr>
-													<td
-														style="
-															margin: 0;
-															padding: 15px 0 0 0;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 14px;
-															line-height: 1;
-															color: #db0011;
-														"
-													>&nbsp;</td>
-													<td
-														style="
-															margin: 0;
-															padding: 15px 0 0 0;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 14px;
-															line-height: 1;
-															color: #db0011;
-														"
-													>&nbsp;</td>
-													<td
-														style="
-															margin: 0;
-															padding: 15px 0 0 0;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 14px;
-															line-height: 1;
-															color: #FFFFFF;
-														"
-													>(*) Điều khoản và điều kiện áp dụng</td>
-												</tr>
+												</td>
+												<td 
+													align="center"
+													bgcolor="#FFFFFF"
+													style="
+														padding: 10px 0;
+														margin: 0;
+														line-height: 1.3;
+														font-size: 16px;
+														font-family: Arial, Helvetica,
+															sans-serif !important;
+													"
+												>CASA ≥ 500M million and salary ≥ 45 million</td>
+											</tr>
 											</table>
 										</td>
 									</tr>
+								<tr>
+								  <td
+										style="
+											padding: 10px 0 0 0;
+											margin: 0;
+											border: none;
+											line-height: 1.3;
+											font-size: 16px;
+											font-family: Arial, Helvetica, sans-serif !important;
+										   	color: #FFFFFF
+										"
+									><sup style="font-size: 12px;">(*)</sup> Terms and conditions applied.</td>
+								  </tr>			
 								</table>
+								<!--End part 2-->
 							</td>
 						</tr>
 						<tr>
 							<td bgcolor="#e7e7e7" class="main_body">
+								<!-- -Part 3 -->
 								<table
 									width="100%"
 									border="0"
 									cellpadding="0"
 									cellspacing="0"
 								>
-									<!-- Header -->
 									<tr>
 										<td
 											align="left"
@@ -2382,286 +1367,158 @@
 											"
 										>With just a salary transfer from 10 million VN, you will always enjoy the following exclusive benefits</td>
 									</tr>
-									<!-- Main content -->
 									<tr>
-										<td
-											bgcolor="#FFFFFF"
-											style="
-												margin: 0;
-												padding: 16px;
-												border: 1px solid #979797;
-												border: none;
-												font-family: Arial, Helvetica, sans-serif !important;
-												font-size: 16px;
-												line-height: 1.3;
-												color: #000000;
-											"
-											class="border-color background-color"
-										>
+										<td>
 											<table
 												width="100%"
 												border="0"
 												cellpadding="0"
 												cellspacing="0"
 											>
-												<!-- 2 -->
 												<tr>
-												  <td
-														style="
-															margin: 0;
-															padding: 0 0 10px 0;
-															border: none;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
-													>
+													<td class="td-mobile">
 														<table
 															width="100%"
 															border="0"
 															cellpadding="0"
 															cellspacing="0"
-															
 														>
+
 															<tr>
-																<!-- Left -->
-																<td
-																	width="285"
-																	style="
-																		margin: 0;
-																		padding: 12px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>
+																<td bgcolor="#FFFFFF">
 																	<table
 																		width="100%"
 																		border="0"
 																		cellpadding="0"
 																		cellspacing="0"
 																	>
+																		<!-- Row 1 -->
 																		<tr>
 																			<td
 																				width="50"
-																				align="left"
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 16px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class=""
-																			>
-																				<img
+																				align="center"
+																				style="padding: 8px 0 0 0"
+																				class="td-mobile img-chs-box"
+																			><img
 																					src="image/chs_box_32.jpg"
-																					width="40"
+																					width="36"
 																					height="auto"
 																					alt=""
 																					style="
 																						display: block;
 																					"
 																				/>
+
 																			</td>
 																			<td
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class=" font-color"
-																			>Free account opening and closure</td>
+																				style="padding: 8px 0 0 0"
+																				class="td-mobile"
+																			>
+																			  Free account opening and closure
+
+																			</td>
 																		</tr>
-																	</table>
-																</td>
-															  <!-- Spacing -->
-																<td
-																	style="padding: 0"
-																	class=""
-																>&nbsp;</td>
-																<!-- End spacing -->
-																<!-- Right -->
-																<td
-																	width="285"
-																	style="
-																		margin: 0;
-																		padding: 12px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
+																		<!-- Line -->
 																		<tr>
-																		  <td
-																				width="50"
-																				align="left"
+																			<td
+																				height="10"
+																				align="center"
 																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 16px;
-																					line-height: 1.3;
-																					color: #000000;
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
 																				"
-																				class=""
+																				class="border-color"
+																			></td>
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																		</tr>
+																		<!-- Row 2 -->
+																		<tr>
+																			<td
+																				width="50"
+																				align="center"
+																				style="
+																					padding: 16px
+																						0
+																						0
+																						0;
+																				"
+																				class="td-mobile"
 																			>
 																				<img
 																					src="image/chs_box_33.jpg"
-																					width="40"
+																					width="36"
 																					height="auto"
 																					alt=""
 																					style="
 																						display: block;
 																					"
 																				/>
-																		  </td>
+																			</td>
 																			<td
 																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
+																					padding: 16px
+																						0
+																						0
+																						0;
 																				"
-																				class=" font-color"
-																			>Free Debit card issuance fee and free annual fee</td>
+																				class="td-mobile"
+																			>
+																			  Free Debit card issuance fee and free annual fee
+																			</td>
 																		</tr>
-																	</table>
-																</td>
-															</tr>
-															<tr>
-															  <td
-																  	height="10"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 1px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>&nbsp;</td>
-															  <td
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 1px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>&nbsp;</td>
-															  <td
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 1px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>&nbsp;</td>
-														  </tr>
-															<tr>
-																<!-- Left -->
-																<td
-																	width="285"
-																	style="
-																		margin: 0;
-																		padding: 12px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
+																		<!-- Line -->
+																		<tr>
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																		</tr>
+																		<!-- Row 3 -->
 																		<tr>
 																			<td
 																				width="50"
-																				align="left"
+																				align="center"
 																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 16px;
-																					line-height: 1.3;
-																					color: #000000;
+																					padding: 16px
+																						0
+																						0
+																						0;
 																				"
-																				class=""
+																				class="td-mobile"
 																			>
 																				<img
 																					src="image/chs_box_34.jpg"
-																					width="40"
+																					width="36"
 																					height="auto"
 																					alt=""
 																					style="
@@ -2671,189 +1528,118 @@
 																			</td>
 																			<td
 																				style="
-																					margin: 0;
-																					padding: 0 15px 0 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
+																					padding: 16px
+																						0
+																						0
+																						0;
 																				"
-																				class=" font-color"
-																			>Free ATM withdraw at Visa/Plus</td>
+																				class="td-mobile"
+																			>
+																			  Free ATM withdraw at Visa/Plus
+																			</td>
 																		</tr>
-																	</table>
-																</td>
-															  <!-- Spacing -->
-																<td
-																	style="padding: 0"
-																	class=""
-																>&nbsp;</td>
-																<!-- End spacing -->
-																<!-- Right -->
-																<td
-																	width="285"
-																	style="
-																		margin: 0;
-																		padding: 12px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
+																		<!-- Line -->
 																		<tr>
-																		  <td
-																				width="50"
-																				align="left"
+																			<td
+																				height="10"
+																				align="center"
 																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 16px;
-																					line-height: 1.3;
-																					color: #000000;
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
 																				"
-																				class=""
+																				class="border-color"
+																			></td>
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																		</tr>
+																		<!-- Row 3 -->
+																		<tr>
+																			<td
+																				width="50"
+																				align="center"
+																				style="
+																					padding: 16px
+																						0
+																						0
+																						0;
+																				"
+																				class="td-mobile"
 																			>
 																				<img
 																					src="image/chs_box_35.jpg"
-																					width="40"
+																					width="36"
 																					height="auto"
 																					alt=""
 																					style="
 																						display: block;
 																					"
 																				/>
-																		  </td>
+																			</td>
 																			<td
 																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
+																					padding: 16px
+																						0
+																						0
+																						0;
 																				"
-																				class=" font-color"
-																			>Free domestic VND and oversea remittance via online remittance</td>
+																				class="td-mobile"
+																			>
+																			  Free domestic VND and oversea remittance via online remittance
+																			</td>
 																		</tr>
-																	</table>
-																</td>
-															</tr>
-															<tr>
-															  <td
-																  	height="10"
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 1px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>&nbsp;</td>
-															  <td
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 1px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>&nbsp;</td>
-															  <td
-																	style="
-																		margin: 0;
-																		padding: 0;
-																		border: none;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 1px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>&nbsp;</td>
-														  </tr>
-															<tr>
-																<!-- Left -->
-																<td
-																	width="285"
-																	style="
-																		margin: 0;
-																		padding: 12px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
+
+																		<!-- Line -->
+																		<tr>
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																		</tr>
+																		<!-- Row 4 -->
 																		<tr>
 																			<td
 																				width="50"
-																				align="left"
+																				align="center"
 																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 16px;
-																					line-height: 1.3;
-																					color: #000000;
+																					padding: 16px
+																						0
+																						0
+																						0;
 																				"
-																				class=""
+																				class="td-mobile"
 																			>
 																				<img
 																					src="image/chs_box_36.jpg"
-																					width="40"
+																					width="36"
 																					height="auto"
 																					alt=""
 																					style="
@@ -2863,165 +1649,58 @@
 																			</td>
 																			<td
 																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
+																					padding: 16px
+																						0
+																						0
+																						0;
 																				"
-																				class=" font-color"
-																			>Free RTP transfer via HSBC Vietnam app</td>
+																				class="td-mobile"
+																			>
+																			  Free RTP transfer via HSBC Vietnam app
+																			</td>
 																		</tr>
-																	</table>
-																</td>
-															  <!-- Spacing -->
-																<td
-																	style="padding: 0"
-																	class=""
-																>&nbsp;</td>
-																<!-- End spacing -->
-																<!-- Right -->
-																<td
-																	width="285"
-																	style="
-																		margin: 0;
-																		padding: 12px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
+
+																		<!-- Line -->
 																		<tr>
-																		  <td
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																		</tr>
+																		<!-- Row 5 -->
+																		<tr>
+																			<td
 																				width="50"
-																				align="left"
+																				align="center"
 																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 16px;
-																					line-height: 1.3;
-																					color: #000000;
+																					padding: 16px
+																						0
+																						0
+																						0;
 																				"
-																				class=""
+																				class="td-mobile"
 																			>
-																			<img
+																				<img
 																					src="image/chs_box_37.jpg"
-																					width="40"
-																					height="auto"
-																					alt=""
-																					style="
-																						display: block;
-																					"
-																				/>
-																		  </td>
-																			<td
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class=" font-color"
-																			>No requirement on monthly average balance</td>
-																		</tr>
-																	</table>
-																</td>
-															</tr>
-														</table>
-													</td>
-												</tr>
-												<!-- 2 -->
-												<tr>
-												  <td
-														style="
-															margin: 0;
-															padding: 0;
-															border: none;
-															font-family: Arial, Helvetica,
-																sans-serif !important;
-															font-size: 16px;
-															line-height: 1.3;
-															color: #000000;
-														"
-													>
-														<table
-															width="100%"
-															border="0"
-															cellpadding="0"
-															cellspacing="0"
-															
-														>
-															<tr>
-																<!-- Left -->
-																<td
-																	width="285"
-																	style="
-																		margin: 0;
-																		padding: 12px;
-																		border: 1px solid
-																			#979797;
-																		font-family: Arial,
-																			Helvetica,
-																			sans-serif !important;
-																		font-size: 16px;
-																		line-height: 1.3;
-																		color: #000000;
-																		box-sizing: border-box;
-																	"
-																	class=""
-																>
-																	<table
-																		width="100%"
-																		border="0"
-																		cellpadding="0"
-																		cellspacing="0"
-																	>
-																		<tr>
-																			<td
-																				width="60"
-																				align="left"
-																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 16px;
-																					line-height: 1.3;
-																					color: #000000;
-																				"
-																				class=""
-																			>
-																			  <img
-																					src="image/chs_box_38.jpg"
-																					width="50"
+																					width="36"
 																					height="auto"
 																					alt=""
 																					style="
@@ -3031,53 +1710,130 @@
 																			</td>
 																			<td
 																				style="
-																					margin: 0;
-																					padding: 0;
-																					border: none;
-																					font-family: Arial,
-																						Helvetica,
-																						sans-serif !important;
-																					font-size: 14px;
-																					line-height: 1.3;
-																					color: #000000;
+																					padding: 16px
+																						0
+																						0
+																						0;
 																				"
-																				class=" font-color"
-																			>Entitled to card acquisition offers and 01 year annual fee waiver</td>
+																				class="td-mobile"
+																			>
+																				No requirement on monthly average balance
+																			</td>
+																		</tr>
+
+																		<!-- Line -->
+																		<tr>
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																		</tr>
+																		<!-- Row 6 -->
+																		<tr>
+																			<td
+																				width="50"
+																				align="center"
+																				style="
+																					padding: 16px
+																						0
+																						0
+																						0;
+																				"
+																				class="td-mobile"
+																			>
+																				<img
+																					src="image/chs_box_38.jpg"
+																					width="36"
+																					height="auto"
+																					alt=""
+																					style="
+																						display: block;
+																					"
+																				/>
+																			</td>
+																			<td
+																				style="
+																					padding: 16px
+																						0
+																						0
+																						0;
+																				"
+																				class="td-mobile"
+																			>
+																				Entitled to card acquisition offers and 01 year annual fee waiver
+																			</td>
+																		</tr>
+
+																		<!-- Line -->
+																		<tr>
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																			<td
+																				height="10"
+																				align="center"
+																				style="
+																					border-bottom: 1px
+																						solid
+																						#333333;
+																					font-size: 1px;
+																				"
+																				class="border-color"
+																			></td>
+																		</tr>
+																	</table>
+																</td>
+															</tr>
+															<tr>
+																<td style="padding: 16px 0 0 0" align="center">
+																	<table
+																		role="presentation"
+																		border="0"
+																		cellpadding="0"
+																		cellspacing="0"
+																		style="text-align: center"
+																	>
+																		<tr>
+																			<td bgcolor="#db0011" style="padding: 16px; color: #FFFFFF;"><strong>Don’t miss out - get rewarded for your salary today!</strong></td>
 																		</tr>
 																	</table>
 																</td>
 															</tr>
 														</table>
 													</td>
+
 												</tr>
 											</table>
 										</td>
 									</tr>
 								</table>
-								<!-- Button -->
-								<table
-									width="100%"
-									border="0"
-									cellpadding="0"
-									cellspacing="0"
-									style="padding: 32px 0 0 0"
-								>
-									<tr>
-										<td align="center">
-											<table
-												role="presentation"
-												border="0"
-												cellpadding="0"
-												cellspacing="0"
-												style="text-align: center"
-											>
-												<tr>
-													<td bgcolor="#db0011" style="padding: 16px; color: #FFFFFF;"><strong>Don’t miss out - get rewarded for your salary today!</strong></td>
-												</tr>
-											</table>
-										</td>
-									</tr>
-								</table>
+								<!-- End part 3-->
 							</td>
 						</tr>
 					</table>
