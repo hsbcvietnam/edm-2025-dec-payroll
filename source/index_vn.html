@@ -8,6 +8,10 @@
 		<style>
 			* {
 				box-sizing: border-box;
+				color-scheme: light;
+			}
+			:root {
+			  color-scheme: light;
 			}
 			body {
 				margin: 0 auto;
@@ -204,63 +208,7 @@
 			}
 
 			/* Dark mode */
-			@media (prefers-color-scheme: dark) {
-				body {
-					background: #101010 !important;
-				}
-
-				/* CSS common */
-				.text-common {
-					color: #ffffff;
-				}
-
-				.font-color {
-					color: #ffffff !important;
-				}
-
-				.background-color {
-					background: #212121 !important;
-				}
-
-				.border-color {
-					border-color: #ededed !important;
-				}
-
-				.line {
-					background: #212121 !important;
-				}
-
-				/* CSS intro */
-				.header-intro {
-					color: #ffffff;
-				}
-
-				.cell-common-style {
-					border: 1px solid #ededed;
-					background-color: #212121;
-					color: #ffffff;
-				}
-
-				.body_content {
-					color: #ffffff !important;
-					background: #212121 !important;
-					border: 1px solid #767676 !important;
-				}
-
-				.footer-container {
-					background-color: #1d1d1d !important;
-					color: #ffffff !important;
-				}
-
-				.footer_container {
-					background: #333333 !important;
-					color: #ffffff !important;
-				}
-
-				.footer-social {
-					color: #ffffff !important;
-				}
-			}
+			
 
 			/* Mobile */
 			@media (max-width: 768px) {
@@ -408,6 +356,9 @@
 
 				.footer_container {
 					padding: 16px 22px !important;
+				}
+				.center-mobile {
+					text-align: center
 				}
 			}
 		</style>
@@ -1033,16 +984,17 @@
 													/>
 												</td>
 												<td
-													align="center"
+													align="left"
 													bgcolor="#FFFFFF"
 													style="
-														padding: 10px 0;
+														padding: 10px;
 														margin: 0;
 														line-height: 1.3;
 														font-size: 16px;
 														font-family: Arial, Helvetica,
 															sans-serif !important;	
 													"
+													class="center-mobile"
 												>
 													<strong>Hoàn tiền thêm</strong> <strong style="color: #db0011;">2%</strong> trên Thẻ tín dụng<br>Ưu đãi giảm lãi suất vay cá nhân đến <strong style="color: #db0011;">1,5%</strong>
 												</td>						
@@ -1090,16 +1042,17 @@
 													/>
 												</td>
 												<td
-													align="center"
+													align="left"
 													bgcolor="#FFFFFF"
 													style="
-														padding: 10px 0;
+														padding: 10px;
 														margin: 0;
 														line-height: 1.3;
 														font-size: 16px;
 														font-family: Arial, Helvetica,
 															sans-serif !important;	
 													"
+													class="center-mobile"
 												>
 													<strong>Hoàn tiền</strong> <strong style="color: #db0011;">1%</strong> không giới hạn cho <span style="white-space: nowrap;">Thẻ Thanh Toán</span> Quốc tế
 												</td>						
@@ -1147,16 +1100,17 @@
 													/>
 												</td>
 												<td
-													align="center"
+													align="left"
 													bgcolor="#FFFFFF"
 													style="
-														padding: 10px 0;
+														padding: 10px;
 														margin: 0;
 														line-height: 1.3;
 														font-size: 16px;
 														font-family: Arial, Helvetica,
 															sans-serif !important;	
 													"
+													class="center-mobile"
 												>
 													<strong style="color: #db0011;">2</strong> cặp vé xem phim CGV
 											  </td>						
@@ -1204,16 +1158,17 @@
 													/>
 												</td>
 												<td
-													align="center"
+													align="left"
 													bgcolor="#FFFFFF"
 													style="
-														padding: 10px 0;
+														padding: 10px;
 														margin: 0;
 														line-height: 1.3;
 														font-size: 16px;
 														font-family: Arial, Helvetica,
 															sans-serif !important;	
 													"
+													class="center-mobile"
 												>
 													<strong style="color: #db0011;">4</strong> cặp vé xem phim CGV
 											  </td>						
@@ -1261,16 +1216,17 @@
 													/>
 												</td>
 												<td
-													align="center"
+													align="left"
 													bgcolor="#FFFFFF"
 													style="
-														padding: 10px 0;
+														padding: 10px;
 														margin: 0;
 														line-height: 1.3;
 														font-size: 16px;
 														font-family: Arial, Helvetica,
 															sans-serif !important;	
 													"
+													class="center-mobile"
 												>
 													<strong style="color: #db0011;">1 lần/năm</strong> sử dụng Airport Fast Track
 											  </td>						
